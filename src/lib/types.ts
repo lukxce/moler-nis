@@ -1,0 +1,89 @@
+export type OpeningHoursBlock = {
+  dayOfWeek: string[];
+  opens: string;
+  closes: string;
+};
+
+export type SeoOverride = {
+  title?: string;
+  description?: string;
+};
+
+export type SiteSettings = {
+  title: string;
+  tagline?: string;
+  phone: string;
+  phoneSecondary?: string;
+  email?: string;
+  address?: string;
+  city: string;
+  serviceAreas: string[];
+  foundedYear?: number;
+  workingHours?: string;
+  openingHoursSpecification: OpeningHoursBlock[];
+  geo?: { lat: number; lng: number };
+  trustBadges: string[];
+  paintBrands: string[];
+  logoUrl?: string;
+  heroImageUrl?: string;
+  aboutImageUrl?: string;
+  socials?: { facebook?: string; instagram?: string };
+  seoUsluge?: SeoOverride;
+  seoCenovnik?: SeoOverride;
+  seoBlog?: SeoOverride;
+};
+
+export type Service = {
+  slug: string;
+  title: string;
+  category: string;
+  unit: string;
+  shortDescription: string;
+  priceFrom: number;
+  priceTo?: number;
+  priceNote?: string;
+  featured?: boolean;
+  imageUrl?: string;
+  body?: unknown;
+};
+
+export type ChecklistItem = {
+  title: string;
+  description: string;
+};
+
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+export type ServicePage = {
+  slug: string;
+  title: string;
+  heroSubtitle?: string;
+  imageUrl?: string;
+  body?: unknown;
+  checklist: ChecklistItem[];
+  ctaBandTitle?: string;
+  ctaBandText?: string;
+  ctaBandBullets: string[];
+  whyUs: ChecklistItem[];
+  faq: FaqItem[];
+  seo?: SeoOverride;
+};
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  category?: string;
+  excerpt: string;
+  summary?: string;
+  keyTakeaways?: string[];
+  publishedAt: string;
+  author?: string;
+  coverImageUrl?: string;
+  body?: unknown;
+  bodyPlain?: string[];
+  faq?: FaqItem[];
+  seo?: SeoOverride;
+};
