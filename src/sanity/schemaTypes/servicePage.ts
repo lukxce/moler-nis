@@ -19,7 +19,7 @@ export const servicePage = defineType({
       title: 'Slug (URL)',
       type: 'slug',
       description:
-        'Mora se poklapati sa kategorijom u cenovniku: unutrasnji-radovi, fasadni-radovi, dekorativni-premazi ili sanacija-renoviranje',
+        'Mora se poklapati sa kategorijom u cenovniku: krecenje, gletovanje, fasadni-radovi, dekorativni-premazi, tapete ili vlaga',
       options: {source: 'title', maxLength: 96},
       validation: (Rule) => Rule.required(),
     }),

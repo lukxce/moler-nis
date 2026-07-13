@@ -11,10 +11,12 @@ export function formatDate(dateString: string): string {
 }
 
 const categoryLabels: Record<string, string> = {
-  "unutrasnji-radovi": "Unutrašnji radovi",
+  "krecenje": "Krečenje",
+  "gletovanje": "Gletovanje",
   "fasadni-radovi": "Fasadni radovi",
-  "dekorativni-premazi": "Dekorativni premazi i tapete",
-  "sanacija-renoviranje": "Sanacija i renoviranje",
+  "dekorativni-premazi": "Dekorativni premazi",
+  "tapete": "Tapete",
+  "vlaga": "Vlaga",
 };
 
 export function serviceCategoryLabel(category: string): string {
@@ -55,6 +57,7 @@ const blogCategoryLabels: Record<string, string> = {
   unutrasnji: "Unutrašnji radovi",
   fasada: "Fasada",
   saveti: "Saveti",
+  materijal: "Materijali i cene",
 };
 
 export function blogCategoryLabel(category: string): string {

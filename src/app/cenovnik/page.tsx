@@ -27,10 +27,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const categoryOrder = [
-  "unutrasnji-radovi",
+  "krecenje",
+  "gletovanje",
   "fasadni-radovi",
   "dekorativni-premazi",
-  "sanacija-renoviranje",
+  "tapete",
+  "vlaga",
 ];
 
 export default async function CenovnikPage() {

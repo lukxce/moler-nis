@@ -12,23 +12,6 @@ type Cta = {
   href: string;
 };
 
-function AccentBadge() {
-  return (
-    <div className="relative hidden h-full w-full items-center justify-center md:flex">
-      <div className="absolute h-56 w-56 rounded-full bg-accent/20 blur-2xl" />
-      <div className="absolute -top-4 right-6 h-16 w-16 rounded-2xl bg-accent/30" />
-      <div className="absolute bottom-2 left-2 h-10 w-10 rounded-full bg-white/10" />
-      <div className="relative flex h-40 w-40 items-center justify-center rounded-[2.5rem] bg-white/10 backdrop-blur">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="h-20 w-20 text-white">
-          <path d="M6 20 20 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <rect x="15" y="2" width="8" height="12" rx="1.5" transform="rotate(45 15 2)" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M7 17c-2 2-3 4-2 7 3 1 5 0 7-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 export function PageHero({
   eyebrow,
   title,
@@ -47,51 +30,44 @@ export function PageHero({
   breadcrumb?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-navy text-white">
+    <section className="relative overflow-hidden bg-surface">
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
-      <Container className="relative grid grid-cols-1 gap-8 py-16 md:grid-cols-[1fr_auto] md:items-center md:py-20">
-        <div>
-          {breadcrumb}
-          <span className="text-sm font-semibold uppercase tracking-wide text-accent">
-            {eyebrow}
-          </span>
-          <h1 className="mt-3 max-w-2xl text-4xl font-bold leading-tight sm:text-5xl">
-            {title}
-          </h1>
-          {subtitle && <p className="mt-4 max-w-2xl text-white/70">{subtitle}</p>}
-          {(primaryCta || secondaryCta) && (
-            <div className="mt-8 flex flex-wrap gap-3">
-              {primaryCta && (
-                <a
-                  href={primaryCta.href}
-                  className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
-                >
-                  {primaryCta.label}
-                </a>
-              )}
-              {secondaryCta && (
-                <a
-                  href={secondaryCta.href}
-                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
-                >
-                  {secondaryCta.label}
-                </a>
-              )}
-            </div>
-          )}
-        </div>
-        <div className="hidden h-48 w-48 md:block">
-          <AccentBadge />
-        </div>
-      </Container>
+      <Container className="relative py-10 md:py-14">
+        {breadcrumb}
+        <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+          {eyebrow}
+        </span>
+        <h1 className="mt-3 max-w-2xl text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+          {title}
+        </h1>
+        {subtitle && <p className="mt-4 max-w-2xl text-muted">{subtitle}</p>}
+        {(primaryCta || secondaryCta) && (
+          <div className="mt-6 flex flex-wrap gap-3">
+            {primaryCta && (
+              <a
+                href={primaryCta.href}
+                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
+              >
+                {primaryCta.label}
+              </a>
+            )}
+            {secondaryCta && (
+              <a
+                href={secondaryCta.href}
+                className="rounded-full border border-navy/15 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
+              >
+                {secondaryCta.label}
+              </a>
+            )}
+          </div>
+        )}
 
-      {stats && stats.length > 0 && (
-        <Container className="relative z-10 pb-14 md:pb-20">
-          <div className="overflow-hidden rounded-2xl border border-black/5 bg-white text-navy shadow-lg sm:overflow-visible sm:rounded-none sm:border-none sm:bg-transparent sm:shadow-none sm:grid sm:grid-cols-3 sm:gap-4">
+        {stats && stats.length > 0 && (
+          <div className="mt-8 overflow-hidden rounded-2xl border border-black/5 bg-white text-navy shadow-sm sm:overflow-visible sm:rounded-none sm:border-none sm:bg-transparent sm:shadow-none sm:grid sm:grid-cols-3 sm:gap-4">
             {stats.map((stat, i) => (
               <div
                 key={stat.label}
-                className={`flex items-center justify-between gap-4 px-5 py-4 sm:block sm:rounded-2xl sm:border sm:border-black/5 sm:bg-white sm:p-5 sm:shadow-lg ${
+                className={`flex items-center justify-between gap-4 px-5 py-4 sm:block sm:rounded-2xl sm:border sm:border-black/5 sm:bg-white sm:p-5 sm:shadow-sm ${
                   i !== stats.length - 1 ? "border-b border-black/5 sm:border-b-0" : ""
                 }`}
               >
@@ -101,8 +77,8 @@ export function PageHero({
               </div>
             ))}
           </div>
-        </Container>
-      )}
+        )}
+      </Container>
     </section>
   );
 }

@@ -106,22 +106,22 @@ export default async function UslugaDetailPage(
         primaryCta={{ label: `Pozovite ${settings.phone}`, href: `tel:${settings.phone.replace(/\s/g, "")}` }}
         secondaryCta={{ label: "Zatražite procenu", href: "/kontakt" }}
         breadcrumb={
-          <nav className="mb-3 text-sm text-white/60">
-            <Link href="/usluge" className="hover:text-white">Usluge</Link>
+          <nav className="mb-3 text-sm text-muted">
+            <Link href="/usluge" className="hover:text-accent">Usluge</Link>
             <span className="mx-2">/</span>
-            <span className="text-white">{page.title}</span>
+            <span className="text-navy">{page.title}</span>
           </nav>
         }
       />
 
       {/* Checklist */}
       {page.checklist.length > 0 && (
-        <section className="py-14">
+        <section className="py-12">
           <Container>
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">
               Šta uključuje
             </span>
-            <h2 className="mt-2 text-3xl font-bold text-navy">{page.title}</h2>
+            <h2 className="mt-2 text-2xl font-bold text-navy">{page.title}</h2>
             <div className="mt-8 grid grid-cols-1 gap-x-12 gap-y-6 sm:grid-cols-2">
               {page.checklist.map((item, i) => (
                 <div key={i} className="border-b border-black/10 pb-6">
@@ -134,35 +134,64 @@ export default async function UslugaDetailPage(
         </section>
       )}
 
-      {/* CTA band */}
-      {page.ctaBandTitle && (
-        <section className="bg-accent py-14 text-white">
+      {/* Pricing */}
+      {relatedServices.length > 0 && (
+        <section className="bg-surface py-12">
           <Container>
-            <h2 className="text-3xl font-bold">{page.ctaBandTitle}</h2>
-            {page.ctaBandText && (
-              <p className="mt-3 max-w-2xl text-white/85">{page.ctaBandText}</p>
-            )}
-            <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
-              {page.ctaBandBullets.map((bullet, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <span className="mt-1 text-white">✓</span>
-                  <span>{bullet}</span>
-                </div>
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+              Cene
+            </span>
+            <h2 className="mt-2 text-2xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>
+            <div className="mt-6 space-y-3">
+              {relatedServices.map((service) => (
+                <ServiceRow key={service.slug} service={service} />
               ))}
             </div>
-            <a
-              href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="mt-8 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-accent transition hover:bg-white/90"
+            <Link
+              href="/cenovnik"
+              className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
             >
-              Pozovite {settings.phone}
-            </a>
+              Pogledajte kompletan cenovnik →
+            </Link>
+          </Container>
+        </section>
+      )}
+
+      {/* CTA band */}
+      {page.ctaBandTitle && (
+        <section className="bg-white pb-12">
+          <Container>
+            <div className="flex flex-col items-start gap-5 rounded-2xl border border-accent/25 bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+              <div>
+                <h2 className="text-xl font-bold text-navy">{page.ctaBandTitle}</h2>
+                {page.ctaBandText && (
+                  <p className="mt-2 max-w-xl text-sm text-muted">{page.ctaBandText}</p>
+                )}
+                {page.ctaBandBullets.length > 0 && (
+                  <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
+                    {page.ctaBandBullets.map((bullet, i) => (
+                      <div key={i} className="flex items-start gap-2 text-sm text-navy/80">
+                        <span className="mt-0.5 text-accent">✓</span>
+                        <span>{bullet}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <a
+                href={`tel:${settings.phone.replace(/\s/g, "")}`}
+                className="shrink-0 rounded-lg bg-navy px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
+              >
+                Pozovite {settings.phone}
+              </a>
+            </div>
           </Container>
         </section>
       )}
 
       {/* Detaljan tekst */}
       {page.body ? (
-        <section className="py-14">
+        <section className="py-12">
           <Container className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">
               Sve što treba da znate
@@ -176,13 +205,13 @@ export default async function UslugaDetailPage(
 
       {/* Why us */}
       {page.whyUs.length > 0 && (
-        <section className="bg-surface py-14">
+        <section className="bg-surface py-12">
           <Container className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
             <div>
               <span className="text-sm font-semibold uppercase tracking-wide text-accent">
                 Zašto mi
               </span>
-              <h2 className="mt-2 text-3xl font-bold text-navy">Zašto izabrati nas?</h2>
+              <h2 className="mt-2 text-2xl font-bold text-navy">Zašto izabrati nas?</h2>
               <div className="mt-8 grid grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2">
                 {page.whyUs.map((item, i) => (
                   <div key={i}>
@@ -208,12 +237,12 @@ export default async function UslugaDetailPage(
 
       {/* FAQ — important for AEO (Answer Engine Optimization) */}
       {page.faq.length > 0 && (
-        <section className="bg-surface py-14">
+        <section className="bg-white py-12">
           <Container className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent">
               Najčešća pitanja
             </span>
-            <h2 className="mt-2 text-3xl font-bold text-navy">
+            <h2 className="mt-2 text-2xl font-bold text-navy">
               Pitanja i odgovori o usluzi &quot;{page.title.toLowerCase()}&quot;
             </h2>
             <div className="mt-8 space-y-3">
@@ -232,29 +261,6 @@ export default async function UslugaDetailPage(
                 </details>
               ))}
             </div>
-          </Container>
-        </section>
-      )}
-
-      {/* Pricing */}
-      {relatedServices.length > 0 && (
-        <section className="py-14">
-          <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
-              Cene
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>
-            <div className="mt-6 space-y-3">
-              {relatedServices.map((service) => (
-                <ServiceRow key={service.slug} service={service} />
-              ))}
-            </div>
-            <Link
-              href="/cenovnik"
-              className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
-            >
-              Pogledajte kompletan cenovnik →
-            </Link>
           </Container>
         </section>
       )}

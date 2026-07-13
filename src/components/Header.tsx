@@ -5,10 +5,12 @@ import { MobileMenu } from "@/components/MobileMenu";
 import { getSiteSettings } from "@/lib/data";
 
 const serviceLinks = [
-  { href: "/usluge/unutrasnji-radovi", label: "Unutrašnji molerski radovi" },
+  { href: "/usluge/krecenje", label: "Krečenje" },
+  { href: "/usluge/gletovanje", label: "Gletovanje" },
   { href: "/usluge/fasadni-radovi", label: "Fasadni radovi" },
-  { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi i tapete" },
-  { href: "/usluge/sanacija-renoviranje", label: "Sanacija i renoviranje" },
+  { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi" },
+  { href: "/usluge/tapete", label: "Tapete" },
+  { href: "/usluge/vlaga", label: "Vlaga" },
 ];
 
 const navLinks = [
@@ -22,10 +24,10 @@ export async function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur">
-      <div className="hidden bg-navy text-white sm:block">
+      <div className="hidden bg-surface text-navy sm:block">
         <Container className="flex items-center justify-between py-2 text-sm">
-          <span>{settings.tagline}</span>
-          <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="font-medium hover:text-accent">
+          <span className="text-muted">{settings.tagline}</span>
+          <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="font-medium text-accent hover:text-accent-dark">
             {settings.phone}
           </a>
         </Container>

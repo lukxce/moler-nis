@@ -25,10 +25,12 @@ export const service = defineType({
       description: 'Mora se poklapati sa slugom odgovarajuće stranice usluge',
       options: {
         list: [
-          {title: 'Unutrašnji molerski radovi', value: 'unutrasnji-radovi'},
+          {title: 'Krečenje', value: 'krecenje'},
+          {title: 'Gletovanje', value: 'gletovanje'},
           {title: 'Fasadni radovi', value: 'fasadni-radovi'},
-          {title: 'Dekorativni premazi i tapete', value: 'dekorativni-premazi'},
-          {title: 'Sanacija i renoviranje', value: 'sanacija-renoviranje'},
+          {title: 'Dekorativni premazi', value: 'dekorativni-premazi'},
+          {title: 'Tapete', value: 'tapete'},
+          {title: 'Vlaga', value: 'vlaga'},
         ],
       },
     }),

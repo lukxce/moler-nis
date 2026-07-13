@@ -5,10 +5,12 @@ import { getSiteSettings } from "@/lib/data";
 import { formatServiceAreas } from "@/lib/format";
 
 const serviceLinks = [
-  { href: "/usluge/unutrasnji-radovi", label: "Unutrašnji molerski radovi" },
+  { href: "/usluge/krecenje", label: "Krečenje" },
+  { href: "/usluge/gletovanje", label: "Gletovanje" },
   { href: "/usluge/fasadni-radovi", label: "Fasadni radovi" },
-  { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi i tapete" },
-  { href: "/usluge/sanacija-renoviranje", label: "Sanacija i renoviranje" },
+  { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi" },
+  { href: "/usluge/tapete", label: "Tapete" },
+  { href: "/usluge/vlaga", label: "Vlaga" },
 ];
 
 export async function Footer() {
