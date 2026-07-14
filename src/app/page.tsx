@@ -16,8 +16,8 @@ import { SITE_URL } from "@/lib/site-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = `Moler ${settings.city} | Molerski i fasadni radovi`;
-  const description = `Gletovanje, farbanje, fasadni radovi i sanacija u ${settings.city}u i okolini. Uredno, po dogovorenom roku, sa garancijom na izvedene radove. Pozovite ${settings.phone}.`;
+  const title = `Gletovanje, krečenje i fasade u ${settings.city}u | ${settings.title}`;
+  const description = `Gletovanje, krečenje, fasade i sanacija vlage u ${settings.city}u i okolini. Uredno, po dogovorenom roku, sa garancijom na izvedene radove. Pozovite ${settings.phone}.`;
 
   return {
     title: { absolute: title },
@@ -41,15 +41,8 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-12 py-16 md:grid-cols-2 md:py-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-md border border-accent/20 bg-white px-3 py-1 text-sm font-semibold text-accent shadow-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-              </span>
-              Dostupni za procenu u {settings.city}u
-            </span>
-            <h1 className="mt-5 text-4xl font-bold leading-[1.1] text-navy sm:text-6xl">
-              Molerski i <span className="text-accent">fasadni radovi</span> u {settings.city}u
+            <h1 className="text-4xl font-bold leading-[1.1] text-navy sm:text-6xl">
+              Gletovanje, krečenje i <span className="text-accent">fasade</span> u {settings.city}u i okolini
             </h1>
             <p className="mt-5 max-w-md text-lg text-muted">
               Gletovanje, farbanje, fasade i sanacija vlage, uredno i po dogovorenom roku.{" "}
@@ -58,12 +51,12 @@ export default async function HomePage() {
                 : "Dugogodišnje iskustvo na terenu."}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/kontakt"
+              <a
+                href={`tel:${settings.phone.replace(/\s/g, "")}`}
                 className="rounded-md bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
               >
-                Zatražite besplatnu procenu
-              </Link>
+                Pozovite {settings.phone}
+              </a>
               <a
                 href="#usluge"
                 className="rounded-md border border-navy/15 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy backdrop-blur transition hover:bg-navy hover:text-white"
