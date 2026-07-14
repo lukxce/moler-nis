@@ -15,7 +15,7 @@ export function ServiceRow({ service, href }: { service: Service; href?: string 
           <p className="mt-1 text-xs text-muted">{service.priceNote}</p>
         )}
       </div>
-      <div className="shrink-0 rounded-full bg-surface px-5 py-2.5 text-center">
+      <div className="shrink-0 rounded-md bg-surface px-5 py-2.5 text-center">
         <span className="font-bold text-navy">
           od {formatRsd(service.priceFrom)}
         </span>
@@ -27,7 +27,7 @@ export function ServiceRow({ service, href }: { service: Service; href?: string 
   );
 
   const className =
-    "group flex flex-col gap-4 rounded-2xl border border-black/5 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between";
+    "group flex flex-col gap-4 rounded-lg border border-black/5 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between";
 
   if (!href) {
     return <div className={className}>{content}</div>;

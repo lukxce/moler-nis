@@ -46,7 +46,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+      <div className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
         <h2 className="text-lg font-semibold text-navy">Poruka je poslata</h2>
         <p className="mt-2 text-sm text-muted">
           Hvala, javićemo vam se u najkraćem roku. Ako je hitno, slobodno nas
@@ -57,7 +57,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+    <form onSubmit={handleSubmit} className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
       <h2 className="text-lg font-semibold text-navy">Pošaljite nam poruku</h2>
       <p className="mt-1 text-sm text-muted">
         Odgovaramo obično u toku radnog dana.
@@ -131,7 +131,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-5 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark disabled:opacity-60"
+        className="mt-5 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark disabled:opacity-60"
       >
         {status === "loading" ? "Slanje..." : "Pošaljite poruku"}
       </button>

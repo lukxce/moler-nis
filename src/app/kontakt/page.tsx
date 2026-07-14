@@ -24,7 +24,7 @@ export default async function KontaktPage() {
 
   return (
     <Container className="py-14">
-      <span className="text-sm font-semibold uppercase tracking-wide text-accent">Kontakt</span>
+      <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">Kontakt</span>
       <h1 className="mt-2 text-4xl font-bold text-navy">Tu smo za procenu, radove ili savet</h1>
       <p className="mt-4 max-w-2xl text-muted">
         Bez obzira da li planirate farbanje jedne sobe, kompletnu fasadu ili
@@ -34,7 +34,7 @@ export default async function KontaktPage() {
 
       <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
         <div className="space-y-6">
-          <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <div className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-navy">Telefon</h2>
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
@@ -53,7 +53,7 @@ export default async function KontaktPage() {
           </div>
 
           {settings.email && (
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+            <div className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
               <h2 className="text-lg font-semibold text-navy">Email</h2>
               <a href={`mailto:${settings.email}`} className="mt-1 block text-accent hover:underline">
                 {settings.email}
@@ -62,14 +62,14 @@ export default async function KontaktPage() {
           )}
 
           {settings.address && (
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+            <div className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
               <h2 className="text-lg font-semibold text-navy">Adresa</h2>
               <p className="mt-1 text-muted">{settings.address}</p>
               {settings.workingHours && <p className="mt-1 text-sm text-muted">{settings.workingHours}</p>}
             </div>
           )}
 
-          <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
+          <div className="rounded-lg border border-black/5 bg-white p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-navy">Oblasti pokrivanja</h2>
             <p className="mt-1 text-muted">
               {formatServiceAreas(settings.city, settings.serviceAreas)}

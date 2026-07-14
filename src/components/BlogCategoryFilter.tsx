@@ -28,7 +28,7 @@ export function BlogCategoryFilter({ posts }: { posts: BlogPost[] }) {
           <button
             type="button"
             onClick={() => setCategory(ALL)}
-            className={`rounded-full px-4 py-2 text-left text-sm font-medium transition lg:rounded-xl ${
+            className={`rounded-md px-4 py-2 text-left text-sm font-medium transition lg:rounded-lg ${
               category === ALL ? "bg-accent text-white" : "bg-surface text-navy hover:bg-black/5"
             }`}
           >
@@ -41,7 +41,7 @@ export function BlogCategoryFilter({ posts }: { posts: BlogPost[] }) {
                 key={c.value}
                 type="button"
                 onClick={() => setCategory(c.value)}
-                className={`rounded-full px-4 py-2 text-left text-sm font-medium transition lg:rounded-xl ${
+                className={`rounded-md px-4 py-2 text-left text-sm font-medium transition lg:rounded-lg ${
                   category === c.value ? "bg-accent text-white" : "bg-surface text-navy hover:bg-black/5"
                 }`}
               >

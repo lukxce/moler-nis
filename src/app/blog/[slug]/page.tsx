@@ -110,7 +110,7 @@ export default async function BlogPostPage(
             </nav>
 
             {post.category && (
-              <span className="mt-4 inline-block rounded-full bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+              <span className="mt-4 inline-block rounded-md bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
                 {blogCategoryLabel(post.category)}
               </span>
             )}
@@ -121,16 +121,16 @@ export default async function BlogPostPage(
 
             <div className="mt-6">
               {post.coverImageUrl ? (
-                <div className="relative h-72 w-full overflow-hidden rounded-3xl">
+                <div className="relative h-72 w-full overflow-hidden rounded-lg">
                   <Image src={post.coverImageUrl} alt={post.title} fill className="object-cover" />
                 </div>
               ) : (
-                <PlaceholderImage label={`Naslovna slika: ${post.title}`} className="h-72 w-full rounded-3xl" />
+                <PlaceholderImage label={`Naslovna slika: ${post.title}`} className="h-72 w-full rounded-lg" />
               )}
             </div>
 
             {(post.summary || (post.keyTakeaways && post.keyTakeaways.length > 0)) && (
-              <div className="mt-6 rounded-2xl border-l-4 border-accent bg-surface p-6">
+              <div className="mt-6 rounded-lg border-l-4 border-accent bg-surface p-6">
                 {post.summary && (
                   <p className="text-navy">{post.summary}</p>
                 )}
@@ -166,7 +166,7 @@ export default async function BlogPostPage(
                   {post.faq.map((item, i) => (
                     <details
                       key={i}
-                      className="group rounded-2xl border border-black/5 bg-white p-5 shadow-sm"
+                      className="group rounded-lg border border-black/5 bg-white p-5 shadow-sm"
                     >
                       <summary className="cursor-pointer list-none font-semibold text-navy marker:content-none">
                         <span className="flex items-center justify-between">
@@ -181,7 +181,7 @@ export default async function BlogPostPage(
               </div>
             )}
 
-            <div className="mt-10 rounded-2xl bg-navy p-6 text-white sm:p-8">
+            <div className="mt-10 rounded-lg bg-navy p-6 text-white sm:p-8">
               <p className="text-lg font-semibold">Treba vam neka od ovih usluga?</p>
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {serviceLinks.map((link) => (
@@ -196,7 +196,7 @@ export default async function BlogPostPage(
               </div>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="mt-4 inline-block rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="mt-4 inline-block rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pozovite {settings.phone}
               </a>
@@ -204,7 +204,7 @@ export default async function BlogPostPage(
           </div>
 
           <aside className="hidden lg:block">
-            <div className="sticky top-24 rounded-2xl border-l-4 border-accent bg-surface p-6">
+            <div className="sticky top-24 rounded-lg border-l-4 border-accent bg-surface p-6">
               <p className="text-sm text-muted">Treba vam savet ili procena?</p>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
@@ -215,7 +215,7 @@ export default async function BlogPostPage(
               <p className="mt-3 text-xs text-muted">{settings.workingHours}</p>
               <Link
                 href="/kontakt"
-                className="mt-4 inline-block rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="mt-4 inline-block rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pošaljite poruku
               </Link>

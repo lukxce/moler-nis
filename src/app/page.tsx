@@ -41,7 +41,7 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-12 py-16 md:grid-cols-2 md:py-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-white px-3 py-1 text-sm font-semibold text-accent shadow-sm">
+            <span className="inline-flex items-center gap-2 rounded-md border border-accent/20 bg-white px-3 py-1 text-sm font-semibold text-accent shadow-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
@@ -60,13 +60,13 @@ export default async function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/kontakt"
-                className="rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
+                className="rounded-md bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
               >
                 Zatražite besplatnu procenu
               </Link>
               <a
                 href="#usluge"
-                className="rounded-full border border-navy/15 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy backdrop-blur transition hover:bg-navy hover:text-white"
+                className="rounded-md border border-navy/15 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy backdrop-blur transition hover:bg-navy hover:text-white"
               >
                 Pogledajte usluge
               </a>
@@ -85,17 +85,17 @@ export default async function HomePage() {
           </div>
           <div className="relative">
             {settings.heroImageUrl ? (
-              <div className="relative h-72 w-full overflow-hidden rounded-3xl shadow-xl shadow-navy/10 sm:h-[26rem]">
+              <div className="relative h-72 w-full overflow-hidden rounded-lg shadow-xl shadow-navy/10 sm:h-[26rem]">
                 <Image src={settings.heroImageUrl} alt={settings.title} fill className="object-cover" />
               </div>
             ) : (
               <PlaceholderImage
                 label="Hero slika: moler farba zid u svetloj prostoriji"
-                className="h-72 w-full rounded-3xl shadow-xl shadow-navy/10 sm:h-[26rem]"
+                className="h-72 w-full rounded-lg shadow-xl shadow-navy/10 sm:h-[26rem]"
               />
             )}
             {settings.foundedYear && (
-              <div className="absolute -bottom-5 left-5 flex items-center gap-3 rounded-2xl bg-white p-4 pr-6 text-navy shadow-xl ring-1 ring-black/5">
+              <div className="absolute -bottom-5 left-5 flex items-center gap-3 rounded-lg bg-white p-4 pr-6 text-navy shadow-xl ring-1 ring-black/5">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-xl">
                   🖌
                 </span>
@@ -108,7 +108,7 @@ export default async function HomePage() {
               </div>
             )}
             {settings.workingHours && (
-              <div className="absolute -top-4 right-5 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold text-navy shadow-md ring-1 ring-black/5 backdrop-blur">
+              <div className="absolute -top-4 right-5 rounded-md bg-white/90 px-4 py-2 text-xs font-semibold text-navy shadow-md ring-1 ring-black/5 backdrop-blur">
                 {settings.workingHours}
               </div>
             )}
@@ -143,7 +143,7 @@ export default async function HomePage() {
         <Container>
           <div className="flex items-end justify-between">
             <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="inline-flex items-center gap-2 font-mono text-sm font-semibold uppercase tracking-wide text-accent">
                 <span className="h-px w-6 bg-accent" />
                 Usluge
               </span>
@@ -158,7 +158,7 @@ export default async function HomePage() {
               <Link
                 key={page.slug}
                 href={`/usluge/${page.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
               >
                 <div className="relative h-40 w-full overflow-hidden">
                   {page.imageUrl ? (
@@ -185,13 +185,13 @@ export default async function HomePage() {
           <div className="mt-6 flex flex-col gap-3 sm:hidden">
             <Link
               href="/cenovnik"
-              className="rounded-full bg-accent px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
+              className="rounded-md bg-accent px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
             >
               Pogledajte cenovnik
             </Link>
             <Link
               href="/usluge"
-              className="rounded-full border border-navy/15 px-6 py-3 text-center text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
+              className="rounded-md border border-navy/15 px-6 py-3 text-center text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
             >
               Vidi sve usluge
             </Link>
@@ -203,7 +203,7 @@ export default async function HomePage() {
       <section className="bg-surface py-16">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="inline-flex items-center gap-2 font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               <span className="h-px w-6 bg-accent" />
               Kako radimo
               <span className="h-px w-6 bg-accent" />
@@ -232,7 +232,7 @@ export default async function HomePage() {
               },
             ].map((item) => (
               <div key={item.step} className="relative text-center">
-                <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-xl font-bold text-white shadow-lg shadow-accent/25">
+                <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-lg bg-accent text-xl font-bold text-white shadow-lg shadow-accent/25">
                   {item.step}
                 </span>
                 <h3 className="mt-5 text-lg font-semibold text-navy">{item.title}</h3>
@@ -243,7 +243,7 @@ export default async function HomePage() {
           <div className="mt-12 text-center">
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="inline-block rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent"
+              className="inline-block rounded-md bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent"
             >
               Pozovite {settings.phone}
             </a>
@@ -256,18 +256,18 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-10 md:grid-cols-2">
           {settings.aboutImageUrl ? (
-            <div className="relative h-72 w-full overflow-hidden rounded-3xl ring-1 ring-white/10 sm:h-96">
+            <div className="relative h-72 w-full overflow-hidden rounded-lg ring-1 ring-white/10 sm:h-96">
               <Image src={settings.aboutImageUrl} alt={settings.title} fill className="object-cover" />
             </div>
           ) : (
             <PlaceholderImage
               label="Slika: moler na terenu tokom fasadnih radova"
               tone="navy"
-              className="h-72 w-full rounded-3xl ring-1 ring-white/10 sm:h-96"
+              className="h-72 w-full rounded-lg ring-1 ring-white/10 sm:h-96"
             />
           )}
           <div>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               O nama
             </span>
             <h2 className="mt-2 text-3xl font-bold">
@@ -284,20 +284,20 @@ export default async function HomePage() {
             <dl className="mt-8 grid grid-cols-3 gap-4 border-y border-white/10 py-6">
               {settings.foundedYear && (
                 <div>
-                  <dd className="text-3xl font-bold text-accent sm:text-4xl">
+                  <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                     {new Date().getFullYear() - settings.foundedYear}+
                   </dd>
                   <dt className="mt-1 text-xs text-white/50">godina iskustva</dt>
                 </div>
               )}
               <div>
-                <dd className="text-3xl font-bold text-accent sm:text-4xl">
+                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                   {settings.paintBrands.length}
                 </dd>
                 <dt className="mt-1 text-xs text-white/50">provereno brendova boja</dt>
               </div>
               <div>
-                <dd className="text-3xl font-bold text-accent sm:text-4xl">
+                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                   {settings.serviceAreas.length}
                 </dd>
                 <dt className="mt-1 text-xs text-white/50">delova grada pokriveno</dt>
@@ -306,13 +306,13 @@ export default async function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
+                className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
               >
                 Pozovite {settings.phone}
               </a>
               <Link
                 href="/kontakt"
-                className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
+                className="rounded-md border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
               >
                 Kontakt
               </Link>
@@ -356,7 +356,7 @@ export default async function HomePage() {
             <Link
               key={card.href}
               href={card.href}
-              className="group rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
+              className="group rounded-lg border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
             >
               <div className="flex items-start justify-between">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
@@ -392,7 +392,7 @@ export default async function HomePage() {
         <Container>
           <div className="flex items-end justify-between">
             <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="inline-flex items-center gap-2 font-mono text-sm font-semibold uppercase tracking-wide text-accent">
                 <span className="h-px w-6 bg-accent" />
                 Blog
               </span>

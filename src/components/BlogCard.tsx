@@ -9,7 +9,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg"
     >
       <div className="relative h-40 w-full overflow-hidden">
         {post.coverImageUrl ? (
@@ -26,7 +26,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
       <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="flex items-center gap-2">
           {post.category && (
-            <span className="rounded-full bg-surface px-2 py-0.5 text-xs font-semibold text-accent">
+            <span className="rounded-md bg-surface px-2 py-0.5 text-xs font-semibold text-accent">
               {blogCategoryLabel(post.category)}
             </span>
           )}

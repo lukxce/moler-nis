@@ -118,7 +118,7 @@ export default async function UslugaDetailPage(
       {page.checklist.length > 0 && (
         <section className="py-12">
           <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               Šta uključuje
             </span>
             <h2 className="mt-2 text-2xl font-bold text-navy">{page.title}</h2>
@@ -138,7 +138,7 @@ export default async function UslugaDetailPage(
       {relatedServices.length > 0 && (
         <section className="bg-surface py-12">
           <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               Cene
             </span>
             <h2 className="mt-2 text-2xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>
@@ -161,7 +161,7 @@ export default async function UslugaDetailPage(
       {page.ctaBandTitle && (
         <section className="bg-white pb-12">
           <Container>
-            <div className="flex flex-col items-start gap-5 rounded-2xl border border-accent/25 bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div className="flex flex-col items-start gap-5 rounded-lg border border-accent/25 bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <h2 className="text-xl font-bold text-navy">{page.ctaBandTitle}</h2>
                 {page.ctaBandText && (
@@ -193,7 +193,7 @@ export default async function UslugaDetailPage(
       {page.body ? (
         <section className="py-12">
           <Container className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               Sve što treba da znate
             </span>
             <div className="mt-2">
@@ -208,7 +208,7 @@ export default async function UslugaDetailPage(
         <section className="bg-surface py-12">
           <Container className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
             <div>
-              <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
                 Zašto mi
               </span>
               <h2 className="mt-2 text-2xl font-bold text-navy">Zašto izabrati nas?</h2>
@@ -222,13 +222,13 @@ export default async function UslugaDetailPage(
               </div>
             </div>
             {page.imageUrl ? (
-              <div className="relative h-72 w-full overflow-hidden rounded-3xl sm:h-96">
+              <div className="relative h-72 w-full overflow-hidden rounded-lg sm:h-96">
                 <Image src={page.imageUrl} alt={page.title} fill className="object-cover" />
               </div>
             ) : (
               <PlaceholderImage
                 label={`Slika: ${page.title.toLowerCase()}`}
-                className="h-72 w-full rounded-3xl sm:h-96"
+                className="h-72 w-full rounded-lg sm:h-96"
               />
             )}
           </Container>
@@ -239,7 +239,7 @@ export default async function UslugaDetailPage(
       {page.faq.length > 0 && (
         <section className="bg-white py-12">
           <Container className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               Najčešća pitanja
             </span>
             <h2 className="mt-2 text-2xl font-bold text-navy">
@@ -249,7 +249,7 @@ export default async function UslugaDetailPage(
               {page.faq.map((item, i) => (
                 <details
                   key={i}
-                  className="group rounded-2xl border border-black/5 bg-white p-6 shadow-sm"
+                  className="group rounded-lg border border-black/5 bg-white p-6 shadow-sm"
                 >
                   <summary className="cursor-pointer list-none font-semibold text-navy marker:content-none">
                     <span className="flex items-center justify-between">

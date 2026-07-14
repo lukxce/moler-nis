@@ -40,7 +40,7 @@ export default async function UslugePage() {
 
       <section className="bg-surface py-14">
         <Container>
-          <span className="text-sm font-semibold uppercase tracking-wide text-accent">Usluge</span>
+          <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">Usluge</span>
           <h1 className="mt-2 text-4xl font-bold text-navy">
             Sve usluge {settings.title}
           </h1>
@@ -58,7 +58,7 @@ export default async function UslugePage() {
               <Link
                 key={page.slug}
                 href={`/usluge/${page.slug}`}
-                className="group rounded-2xl border border-black/5 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="group rounded-lg border border-black/5 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <h2 className="text-xl font-bold text-navy group-hover:text-accent">
                   {page.title}
