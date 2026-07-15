@@ -1,21 +1,21 @@
 type PlaceholderImageProps = {
   label: string;
   className?: string;
-  tone?: "navy" | "burgundy" | "light";
+  tone?: "warm" | "burgundy" | "light";
 };
 
 export function PlaceholderImage({
   label,
   className = "",
-  tone = "navy",
+  tone = "warm",
 }: PlaceholderImageProps) {
   const bg =
     tone === "burgundy"
       ? "bg-gradient-to-br from-burgundy to-burgundy-light"
-      : tone === "navy"
-        ? "bg-gradient-to-br from-navy to-navy-light"
+      : tone === "warm"
+        ? "bg-gradient-to-br from-surface to-accent/20"
         : "bg-gradient-to-br from-surface to-white";
-  const text = tone === "light" ? "text-navy/40" : "text-white/60";
+  const text = tone === "burgundy" ? "text-white/60" : "text-accent-dark/50";
 
   return (
     <div
@@ -32,8 +32,8 @@ export function PlaceholderImage({
         <path d="M18 40c-3 3-4 6-3 10 4 1 7 0 10-3" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <span
-        className={`absolute bottom-2 left-2 rounded bg-black/30 px-2 py-1 text-[10px] font-medium ${
-          tone === "light" ? "text-navy/60" : "text-white/80"
+        className={`absolute bottom-2 left-2 rounded px-2 py-1 text-[10px] font-medium ${
+          tone === "burgundy" ? "bg-black/30 text-white/80" : "bg-white/60 text-navy/60"
         }`}
       >
         {label}
