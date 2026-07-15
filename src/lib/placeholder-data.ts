@@ -810,6 +810,7 @@ export type ServicePageItem = {
   ctaBandBullets: string[];
   whyUs: { title: string; description: string }[];
   faq: { question: string; answer: string }[];
+  seo?: { title?: string; description?: string };
 };
 
 export const servicePages: ServicePageItem[] = [
@@ -817,10 +818,17 @@ export const servicePages: ServicePageItem[] = [
     slug: "krecenje",
     title: "Krečenje",
     heroSubtitle:
-      "Krečenje zidova i plafona po broju slojeva i tipu boje, sa fiksnom cenom posle besplatnog obilaska.",
+      "Krečenje stanova, kuća i pojedinačnih soba u Nišu, po broju slojeva i tipu boje, sa fiksnom cenom posle besplatnog obilaska.",
+    seo: {
+      title: "Krečenje stanova, kuća i soba u Nišu | cene",
+      description:
+        "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini. Fiksna cena posle besplatnog obilaska, uredno i po dogovorenom roku.",
+    },
     body: [
       h2("Krečenje nije jedna usluga, nego nekoliko različitih izbora"),
       p("Kad kažemo „krečenje”, u praksi to pokriva nekoliko različitih poslova, koji se razlikuju po broju slojeva, tipu boje i nameni prostorije. Cena i vreme rada zavise upravo od tih izbora, ne samo od kvadrature zida, zato uvek prvo razgovaram sa klijentom o nameni prostorije pre nego što damo konačnu ponudu."),
+      h2("Krečenje stanova, kuća i pojedinačnih soba"),
+      p("Krečenje stana u zgradi i krečenje kuće nisu isti posao, iako zvuče slično. Kod stana obično radim prostoriju po prostoriju, uz zaštitu zajedničkih delova zgrade (stepenište, lift) ako se materijal unosi kroz njih. Kod kuće, pogotovo starije gradnje, češće nailazim na neravnije zidove i stariji malter koji zahteva više pripreme pre nego što se pređe na farbanje. Krečenje jedne sobe, na primer dečje sobe ili spavaće sobe u sklopu većeg stana, radim i kao samostalan posao, bez obaveze da se zahvata ceo stan ili kuća."),
       h2("Broj slojeva menja i cenu i rezultat"),
       p("Jedan sloj boje je opcija samo kad se ne menja ton, na primer kad se osvežava zid istom bojom kojom je već farban. Kod svake promene tona, standardno radim dva sloja, jer jedan sloj retko postiže ujednačenu pokrivnost, ostaju vidljive senke starije boje ispod novog premaza."),
       h2("Izbor boje prema nameni prostorije"),
@@ -863,10 +871,17 @@ export const servicePages: ServicePageItem[] = [
     slug: "gletovanje",
     title: "Gletovanje",
     heroSubtitle:
-      "Gletovanje zidova i plafona, bandažiranje spojeva i brušenje do glatke površine, priprema koja određuje krajnji izgled krečenja.",
+      "Gletovanje stanova i kuća u Nišu, bandažiranje spojeva i brušenje do glatke površine, priprema koja određuje krajnji izgled krečenja.",
+    seo: {
+      title: "Gletovanje stanova i kuća u Nišu | cene",
+      description:
+        "Gletovanje stanova i kuća u Nišu i okolini, zidovi i plafoni. Dva tanka sloja sa brušenjem, fiksna cena posle besplatnog obilaska.",
+    },
     body: [
       h2("Zašto gletovanje tretiram kao zaseban posao, ne kao dodatak"),
       p("Gletovanje se često posmatra kao usputni korak pre farbanja, ali u praksi je to posao za sebe, sa svojom tehnikom, redosledom i vremenom sušenja koje se ne može ubrzati. Loše ili preskočeno gletovanje je najčešći razlog da farbanje, iako uredno urađeno, na kraju ne izgleda profesionalno."),
+      h2("Gletovanje stanova i gletovanje kuća"),
+      p("Kod gletovanja stana u zgradi, najčešće se radi o već malterisanim, ravnijim zidovima, gde je posao uglavnom u tankim slojevima i finom brušenju. Gletovanje kuće, posebno starije, ume da zahteva više pripreme, sanaciju pukotina i ponekad grublji prvi sloj pre standardnog postupka, jer je podloga često neravnija i sa tragovima prethodnih radova. U oba slučaja prvo pogledam prostor uživo, jer se obim posla vidi tek na licu mesta."),
       h2("Šta gletovanje zapravo radi"),
       p("Glet masa je fina, gusta smesa koja se nanosi tankim slojem preko zida ili plafona da bi izravnala celu površinu, uključujući sitne neravnine koje se golim okom jedva primete na sirovom zidu, ali postanu vidljive čim se nanese boja, pogotovo pod bočnim osvetljenjem."),
       h2("Bandažiranje spojeva i sanacija pukotina"),
