@@ -196,7 +196,7 @@ export default async function BlogPostPage(
               </div>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="mt-4 inline-block rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="mt-4 inline-block rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:bg-white/90"
               >
                 Pozovite {settings.phone}
               </a>

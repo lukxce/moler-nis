@@ -19,7 +19,7 @@ export async function Footer() {
 
   return (
     <footer className="mt-10 bg-navy text-white">
-      <div className="h-1 bg-accent" />
+      <div className="h-1 bg-white/20" />
       <Container className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 md:grid-cols-4">
         <div>
           <h3 className="text-lg font-bold">{settings.title}</h3>
@@ -39,10 +39,10 @@ export async function Footer() {
             Brzi linkovi
           </h4>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/usluge" className="hover:text-accent">Usluge</Link></li>
-            <li><Link href="/cenovnik" className="hover:text-accent">Cenovnik</Link></li>
-            <li><Link href="/blog" className="hover:text-accent">Blog</Link></li>
-            <li><Link href="/kontakt" className="hover:text-accent">Kontakt</Link></li>
+            <li><Link href="/usluge" className="hover:text-white">Usluge</Link></li>
+            <li><Link href="/cenovnik" className="hover:text-white">Cenovnik</Link></li>
+            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
+            <li><Link href="/kontakt" className="hover:text-white">Kontakt</Link></li>
           </ul>
         </div>
 
@@ -53,7 +53,7 @@ export async function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {serviceLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-accent">
+                <Link href={link.href} className="hover:text-white">
                   {link.label}
                 </Link>
               </li>
@@ -67,13 +67,13 @@ export async function Footer() {
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>
-              <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="hover:text-accent">
+              <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="hover:text-white">
                 {settings.phone}
               </a>
             </li>
             {settings.email && (
               <li>
-                <a href={`mailto:${settings.email}`} className="hover:text-accent">
+                <a href={`mailto:${settings.email}`} className="hover:text-white">
                   {settings.email}
                 </a>
               </li>

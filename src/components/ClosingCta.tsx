@@ -5,9 +5,9 @@ export function ClosingCta({ phone }: { phone: string }) {
     <section className="py-10">
       <Container>
         <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-gradient-to-br from-navy to-navy-light p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-10">
-          <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/15 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-3xl" />
           <div>
-            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-white/70">
               Napomena
             </span>
             <h2 className="mt-2 text-2xl font-bold sm:text-3xl">
@@ -20,7 +20,7 @@ export function ClosingCta({ phone }: { phone: string }) {
           </div>
           <a
             href={`tel:${phone.replace(/\s/g, "")}`}
-            className="shrink-0 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
+            className="shrink-0 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:bg-white/90"
           >
             Pozovite {phone}
           </a>

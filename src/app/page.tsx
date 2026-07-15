@@ -247,7 +247,7 @@ export default async function HomePage() {
 
       {/* About */}
       <section className="relative overflow-hidden bg-navy py-16 text-white">
-        <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+        <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-10 md:grid-cols-2">
           {settings.aboutImageUrl ? (
             <div className="relative h-72 w-full overflow-hidden rounded-lg ring-1 ring-white/10 sm:h-96">
@@ -261,7 +261,7 @@ export default async function HomePage() {
             />
           )}
           <div>
-            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-white/70">
               O nama
             </span>
             <h2 className="mt-2 text-3xl font-bold">
@@ -278,20 +278,20 @@ export default async function HomePage() {
             <dl className="mt-8 grid grid-cols-3 gap-4 border-y border-white/10 py-6">
               {settings.foundedYear && (
                 <div>
-                  <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                  <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
                     {new Date().getFullYear() - settings.foundedYear}+
                   </dd>
                   <dt className="mt-1 text-xs text-white/50">godina iskustva</dt>
                 </div>
               )}
               <div>
-                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
                   {settings.paintBrands.length}
                 </dd>
                 <dt className="mt-1 text-xs text-white/50">provereno brendova boja</dt>
               </div>
               <div>
-                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
                   {settings.serviceAreas.length}
                 </dd>
                 <dt className="mt-1 text-xs text-white/50">delova grada pokriveno</dt>
@@ -300,7 +300,7 @@ export default async function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:bg-accent-dark"
+                className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy shadow-lg transition hover:bg-white/90"
               >
                 Pozovite {settings.phone}
               </a>
