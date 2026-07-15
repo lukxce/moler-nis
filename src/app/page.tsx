@@ -37,8 +37,9 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-surface">
-        <div className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
+      <section className="wash-warm relative overflow-hidden">
+        <div className="pointer-events-none absolute -right-32 -top-24 h-[30rem] w-[30rem] rounded-full bg-accent/12 blur-3xl" />
+        <div className="pointer-events-none absolute -left-40 bottom-0 h-[28rem] w-[28rem] rounded-full bg-blush/60 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-12 py-16 md:grid-cols-2 md:py-24">
           <div>
             <h1 className="text-4xl font-bold leading-[1.1] text-navy sm:text-6xl">
@@ -194,7 +195,7 @@ export default async function HomePage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-surface py-16">
+      <section className="wash-warm border-y border-black/5 py-20">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-flex items-center gap-2 font-mono text-sm font-semibold uppercase tracking-wide text-accent">
@@ -246,67 +247,65 @@ export default async function HomePage() {
       </section>
 
       {/* About */}
-      <section className="relative overflow-hidden bg-burgundy py-16 text-white">
-        <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-        <Container className="relative grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+      <section className="wash-warm-alt border-y border-black/5 py-20">
+        <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           {settings.aboutImageUrl ? (
-            <div className="relative h-72 w-full overflow-hidden rounded-lg ring-1 ring-white/10 sm:h-96">
+            <div className="relative h-80 w-full overflow-hidden rounded-lg sm:h-[26rem]">
               <Image src={settings.aboutImageUrl} alt={settings.title} fill className="object-cover" />
             </div>
           ) : (
             <PlaceholderImage
               label="Slika: moler na terenu tokom fasadnih radova"
-              tone="burgundy"
-              className="h-72 w-full rounded-lg ring-1 ring-white/10 sm:h-96"
+              className="h-80 w-full rounded-lg sm:h-[26rem]"
             />
           )}
           <div>
-            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-white/70">
+            <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               O nama
             </span>
-            <h2 className="mt-2 text-3xl font-bold">
+            <h2 className="mt-2 text-3xl font-bold text-navy sm:text-4xl">
               Molerski radovi sa iskustvom na terenu
             </h2>
-            <p className="mt-4 text-white/70">
+            <p className="mt-4 text-muted">
               {settings.title} izvodi unutrašnje molerske radove, fasade, dekorativne premaze
               i sanaciju {settings.foundedYear ? `od ${settings.foundedYear}. godine` : ""}.
               Pokrivamo: {formatServiceAreas(settings.city, settings.serviceAreas)}.
             </p>
-            <p className="mt-3 text-white/70">
+            <p className="mt-3 text-muted">
               Radimo sa proverenim markama boja: {settings.paintBrands.join(", ")}.
             </p>
-            <dl className="mt-8 grid grid-cols-3 gap-4 border-y border-white/10 py-6">
+            <dl className="mt-8 grid grid-cols-3 gap-4 border-y border-black/10 py-6">
               {settings.foundedYear && (
                 <div>
-                  <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
+                  <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                     {new Date().getFullYear() - settings.foundedYear}+
                   </dd>
-                  <dt className="mt-1 text-xs text-white/50">godina iskustva</dt>
+                  <dt className="mt-1 text-xs text-muted">godina iskustva na terenu</dt>
                 </div>
               )}
               <div>
-                <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
-                  {settings.paintBrands.length}
+                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                  {servicePages.length}
                 </dd>
-                <dt className="mt-1 text-xs text-white/50">provereno brendova boja</dt>
+                <dt className="mt-1 text-xs text-muted">vrste molerskih usluga</dt>
               </div>
               <div>
-                <dd className="font-mono text-3xl font-bold text-white sm:text-4xl">
-                  {settings.serviceAreas.length}
+                <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                  0
                 </dd>
-                <dt className="mt-1 text-xs text-white/50">delova grada pokriveno</dt>
+                <dt className="mt-1 text-xs text-muted">skrivenih troškova, fiksna cena</dt>
               </div>
             </dl>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-burgundy shadow-lg transition hover:bg-white/90"
+                className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pozovite {settings.phone}
               </a>
               <Link
                 href="/kontakt"
-                className="rounded-md border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-burgundy"
+                className="rounded-md border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-accent hover:text-accent"
               >
                 Kontakt
               </Link>

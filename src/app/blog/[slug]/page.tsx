@@ -181,14 +181,14 @@ export default async function BlogPostPage(
               </div>
             )}
 
-            <div className="mt-10 rounded-lg bg-burgundy p-6 text-white sm:p-8">
-              <p className="text-lg font-semibold">Treba vam neka od ovih usluga?</p>
+            <div className="wash-warm-alt mt-10 rounded-lg border border-black/5 p-6 sm:p-8">
+              <p className="text-lg font-semibold text-navy">Treba vam neka od ovih usluga?</p>
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {serviceLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="rounded-xl bg-white/10 px-4 py-3 text-sm font-medium transition hover:bg-white/20"
+                    className="rounded-md border border-black/10 bg-white/60 px-4 py-3 text-sm font-medium text-navy transition hover:border-accent hover:text-accent"
                   >
                     {link.label} →
                   </Link>
@@ -196,7 +196,7 @@ export default async function BlogPostPage(
               </div>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="mt-4 inline-block rounded-md bg-white px-6 py-3 text-sm font-semibold text-burgundy transition hover:bg-white/90"
+                className="mt-4 inline-block rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pozovite {settings.phone}
               </a>

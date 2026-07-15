@@ -30,8 +30,9 @@ export function PageHero({
   breadcrumb?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-surface">
+    <section className="wash-warm relative overflow-hidden border-b border-black/5">
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+      <div className="pointer-events-none absolute -left-28 bottom-0 h-72 w-72 rounded-full bg-blush/50 blur-3xl" />
       <Container className="relative py-10 md:py-14">
         {breadcrumb}
         <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">

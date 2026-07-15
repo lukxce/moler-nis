@@ -18,42 +18,41 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-10 bg-burgundy text-white">
-      <div className="h-1 bg-white/20" />
+    <footer className="mt-10 border-t border-black/10 bg-background">
       <Container className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 md:grid-cols-4">
         <div>
-          <h3 className="text-lg font-bold">{settings.title}</h3>
-          <p className="mt-2 text-sm text-white/70">{settings.tagline}</p>
+          <h3 className="text-lg font-bold text-navy">{settings.title}</h3>
+          <p className="mt-2 text-sm text-muted">{settings.tagline}</p>
           {settings.foundedYear && (
-            <p className="mt-4 text-sm text-white/50">
+            <p className="mt-4 text-sm text-muted/80">
               Radimo od {settings.foundedYear}. godine
             </p>
           )}
-          <p className="mt-2 text-sm text-white/70">
+          <p className="mt-2 text-sm text-muted">
             {formatServiceAreas(settings.city, settings.serviceAreas)}
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+          <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">
             Brzi linkovi
           </h4>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/usluge" className="hover:text-white">Usluge</Link></li>
-            <li><Link href="/cenovnik" className="hover:text-white">Cenovnik</Link></li>
-            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-            <li><Link href="/kontakt" className="hover:text-white">Kontakt</Link></li>
+          <ul className="mt-4 space-y-2.5 text-sm text-muted">
+            <li><Link href="/usluge" className="transition hover:text-accent">Usluge</Link></li>
+            <li><Link href="/cenovnik" className="transition hover:text-accent">Cenovnik</Link></li>
+            <li><Link href="/blog" className="transition hover:text-accent">Blog</Link></li>
+            <li><Link href="/kontakt" className="transition hover:text-accent">Kontakt</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+          <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">
             Usluge
           </h4>
-          <ul className="mt-4 space-y-2 text-sm">
+          <ul className="mt-4 space-y-2.5 text-sm text-muted">
             {serviceLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-white">
+                <Link href={link.href} className="transition hover:text-accent">
                   {link.label}
                 </Link>
               </li>
@@ -62,18 +61,18 @@ export async function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+          <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">
             Kontakt
           </h4>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <ul className="mt-4 space-y-2.5 text-sm text-muted">
             <li>
-              <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="hover:text-white">
+              <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="font-semibold text-navy transition hover:text-accent">
                 {settings.phone}
               </a>
             </li>
             {settings.email && (
               <li>
-                <a href={`mailto:${settings.email}`} className="hover:text-white">
+                <a href={`mailto:${settings.email}`} className="transition hover:text-accent">
                   {settings.email}
                 </a>
               </li>
@@ -84,8 +83,8 @@ export async function Footer() {
         </div>
       </Container>
 
-      <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-white/50 sm:flex-row">
+      <div className="border-t border-black/10">
+        <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-muted sm:flex-row">
           <span>© {year} {settings.title}. Sva prava zadržana.</span>
           <span>{settings.trustBadges[0]}</span>
         </Container>

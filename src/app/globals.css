@@ -56,6 +56,23 @@ p {
   text-wrap: pretty;
 }
 
+/* Warm two-directional wash: blush glow low-right, cooler paper high-left.
+   Used on light hero/section surfaces and image placeholders. */
+.wash-warm {
+  background-color: var(--color-surface);
+  background-image:
+    radial-gradient(120% 120% at 100% 100%, var(--color-blush) 0%, rgba(245, 227, 220, 0) 55%),
+    radial-gradient(120% 120% at 0% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+/* Inverse tilt: blush from top-right, paper from bottom-left. Alternates rhythm. */
+.wash-warm-alt {
+  background-color: var(--color-surface);
+  background-image:
+    radial-gradient(120% 120% at 100% 0%, var(--color-blush) 0%, rgba(245, 227, 220, 0) 55%),
+    radial-gradient(130% 130% at 0% 100%, #ffffff 0%, rgba(255, 255, 255, 0) 60%);
+}
+
 @keyframes marquee-right {
   from {
     transform: translateX(-50%);
