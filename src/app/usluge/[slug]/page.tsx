@@ -161,7 +161,7 @@ export default async function UslugaDetailPage(
       {page.ctaBandTitle && (
         <section className="bg-white pb-12">
           <Container>
-            <div className="flex flex-col items-start gap-5 rounded-lg border border-accent/25 bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div className="flex flex-col items-start gap-5 rounded-lg border border-black/10 bg-surface p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <h2 className="text-xl font-bold text-navy">{page.ctaBandTitle}</h2>
                 {page.ctaBandText && (
