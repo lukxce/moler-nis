@@ -25,7 +25,7 @@ function bullets(items: string[]) {
 
 export const siteSettings = {
   title: "Moler Pro Niš",
-  tagline: "Krečenje, fasade i dekorativni premazi u Nišu, uredno i po dogovorenom roku",
+  tagline: "Krečenje, fasade i dekorativni premazi u Nišu, uredno i na vreme",
   phone: "065 781 4923",
   phoneSecondary: "018 452 990",
   email: "info@molernis.rs",
@@ -48,7 +48,7 @@ export const siteSettings = {
     "Kvalitetne boje provere marke",
     "Garancija na izvedene radove",
     "Prekrivamo i štitimo nameštaj",
-    "Poštujemo dogovoreni rok",
+    "Radimo na vreme",
   ],
   paintBrands: ["Jub", "Zvezda Helios", "Caparol", "Beckers", "Djordjevic Boje"],
 };
@@ -822,7 +822,7 @@ export const servicePages: ServicePageItem[] = [
     seo: {
       title: "Krečenje stanova, kuća i soba u Nišu | cene",
       description:
-        "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini. Fiksna cena posle besplatnog obilaska, uredno i po dogovorenom roku.",
+        "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini. Fiksna cena posle besplatnog obilaska, uredno i na vreme.",
     },
     body: [
       h2("Krečenje nije jedna usluga, nego nekoliko različitih izbora"),

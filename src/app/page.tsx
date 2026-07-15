@@ -17,7 +17,7 @@ import { SITE_URL } from "@/lib/site-config";
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   const title = `Gletovanje, krečenje i fasade u ${settings.city}u | ${settings.title}`;
-  const description = `Gletovanje, krečenje, fasade i sanacija vlage u ${settings.city}u i okolini. Uredno, po dogovorenom roku, sa garancijom na izvedene radove. Pozovite ${settings.phone}.`;
+  const description = `Gletovanje, krečenje, fasade i sanacija vlage u ${settings.city}u i okolini. Uredno, na vreme, sa garancijom na izvedene radove. Pozovite ${settings.phone}.`;
 
   return {
     title: { absolute: title },
@@ -47,7 +47,7 @@ export default async function HomePage() {
             </h1>
             <p className="mt-5 max-w-md text-lg text-muted">
               Gletovanje, krečenje, fasade i sanacija vlage u {settings.city}u i okolini,
-              uredno i po dogovorenom roku.{" "}
+              uredno i na vreme.{" "}
               {settings.foundedYear
                 ? `Preko ${new Date().getFullYear() - settings.foundedYear} godina iskustva na terenu.`
                 : "Dugogodišnje iskustvo na terenu."}
@@ -223,7 +223,7 @@ export default async function HomePage() {
               {
                 step: "3",
                 title: "Uredno izveden posao, sa garancijom",
-                text: "Prekrivamo i štitimo prostor, radimo po dogovorenom roku i dajemo garanciju na izvedene radove.",
+                text: "Prekrivamo i štitimo prostor, radimo na vreme i dajemo garanciju na izvedene radove.",
               },
             ].map((item) => (
               <div key={item.step} className="relative text-center">
