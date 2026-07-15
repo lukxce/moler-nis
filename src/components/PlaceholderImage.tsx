@@ -13,9 +13,9 @@ export function PlaceholderImage({
     tone === "burgundy"
       ? "bg-gradient-to-br from-burgundy to-burgundy-light"
       : tone === "warm"
-        ? "bg-gradient-to-br from-surface to-accent/20"
+        ? "bg-gradient-to-br from-surface to-blush"
         : "bg-gradient-to-br from-surface to-white";
-  const text = tone === "burgundy" ? "text-white/60" : "text-accent-dark/50";
+  const text = tone === "burgundy" ? "text-white/60" : "text-accent-dark/40";
 
   return (
     <div
