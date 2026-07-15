@@ -136,7 +136,7 @@ export default async function UslugaDetailPage(
 
       {/* Pricing */}
       {relatedServices.length > 0 && (
-        <section className="bg-surface py-12">
+        <section className="wash-warm-alt border-y border-black/5 py-12">
           <Container>
             <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
               Cene
@@ -159,9 +159,9 @@ export default async function UslugaDetailPage(
 
       {/* CTA band */}
       {page.ctaBandTitle && (
-        <section className="bg-white pb-12">
+        <section className="bg-white py-12">
           <Container>
-            <div className="flex flex-col items-start gap-5 rounded-lg border border-black/10 bg-surface p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div className="wash-warm flex flex-col items-start gap-5 rounded-lg border border-black/10 p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <h2 className="text-xl font-bold text-navy">{page.ctaBandTitle}</h2>
                 {page.ctaBandText && (
@@ -205,7 +205,7 @@ export default async function UslugaDetailPage(
 
       {/* Why us */}
       {page.whyUs.length > 0 && (
-        <section className="bg-surface py-12">
+        <section className="wash-warm-alt border-y border-black/5 py-12">
           <Container className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
             <div>
               <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">

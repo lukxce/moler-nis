@@ -381,7 +381,7 @@ export default async function HomePage() {
       </section>
 
       {/* Blog preview */}
-      <section className="bg-surface py-16">
+      <section className="wash-warm border-y border-black/5 py-16">
         <Container>
           <div className="flex items-end justify-between">
             <div>

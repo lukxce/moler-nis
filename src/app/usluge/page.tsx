@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHero } from "@/components/PageHero";
 import { getServicePages, getSiteSettings } from "@/lib/data";
 import { SITE_URL } from "@/lib/site-config";
 
@@ -38,18 +39,13 @@ export default async function UslugePage() {
     <>
       <JsonLd data={breadcrumbJsonLd} />
 
-      <section className="bg-surface py-14">
-        <Container>
-          <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">Usluge</span>
-          <h1 className="mt-2 text-4xl font-bold text-navy">
-            Sve usluge {settings.title}
-          </h1>
-          <p className="mt-4 max-w-2xl text-muted">
-            Od jedne prostorije do kompletne fasade, pogledajte šta svaka usluga
-            uključuje, a cene pogledajte na dnu svake stranice.
-          </p>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow="Usluge"
+        title={`Sve usluge ${settings.title}`}
+        subtitle="Od jedne prostorije do kompletne fasade, pogledajte šta svaka usluga uključuje, a cene pogledajte na dnu svake stranice."
+        primaryCta={{ label: `Pozovite ${settings.phone}`, href: `tel:${settings.phone.replace(/\s/g, "")}` }}
+        secondaryCta={{ label: "Pogledajte cenovnik", href: "/cenovnik" }}
+      />
 
       <section className="py-14">
         <Container>
