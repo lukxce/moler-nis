@@ -54,7 +54,7 @@ export function PageHero({
             {secondaryCta && (
               <a
                 href={secondaryCta.href}
-                className="rounded-md border border-navy/15 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
+                className="rounded-md border border-navy/15 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:border-accent-dark hover:text-accent-dark"
               >
                 {secondaryCta.label}
               </a>

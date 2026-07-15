@@ -20,7 +20,7 @@ export function ClosingCta({ phone }: { phone: string }) {
           </div>
           <a
             href={`tel:${phone.replace(/\s/g, "")}`}
-            className="shrink-0 rounded-md bg-burgundy px-6 py-3 text-sm font-semibold text-white transition hover:bg-burgundy-light"
+            className="shrink-0 rounded-md bg-white px-6 py-3 text-sm font-semibold text-accent-dark shadow-lg transition hover:bg-white/90"
           >
             Pozovite {phone}
           </a>

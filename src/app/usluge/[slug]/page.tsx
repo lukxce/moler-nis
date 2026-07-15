@@ -180,7 +180,7 @@ export default async function UslugaDetailPage(
               </div>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="shrink-0 rounded-lg bg-navy px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="shrink-0 rounded-lg bg-accent px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pozovite {settings.phone}
               </a>

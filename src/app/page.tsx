@@ -60,7 +60,7 @@ export default async function HomePage() {
               </a>
               <a
                 href="#usluge"
-                className="rounded-md border border-navy/15 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy backdrop-blur transition hover:bg-navy hover:text-white"
+                className="rounded-md border border-navy/15 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy backdrop-blur transition hover:border-accent-dark hover:text-accent-dark"
               >
                 Pogledajte usluge
               </a>
@@ -185,7 +185,7 @@ export default async function HomePage() {
             </Link>
             <Link
               href="/usluge"
-              className="rounded-md border border-navy/15 px-6 py-3 text-center text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
+              className="rounded-md border border-navy/15 px-6 py-3 text-center text-sm font-semibold text-navy transition hover:border-accent-dark hover:text-accent-dark"
             >
               Vidi sve usluge
             </Link>
@@ -237,7 +237,7 @@ export default async function HomePage() {
           <div className="mt-12 text-center">
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="inline-block rounded-md bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent"
+              className="inline-block rounded-md bg-accent px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
             >
               Pozovite {settings.phone}
             </a>
@@ -300,13 +300,13 @@ export default async function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy shadow-lg transition hover:bg-white/90"
+                className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-burgundy shadow-lg transition hover:bg-white/90"
               >
                 Pozovite {settings.phone}
               </a>
               <Link
                 href="/kontakt"
-                className="rounded-md border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
+                className="rounded-md border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-burgundy"
               >
                 Kontakt
               </Link>
