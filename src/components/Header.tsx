@@ -24,15 +24,6 @@ export async function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur">
-      <div className="hidden bg-surface text-navy sm:block">
-        <Container className="flex items-center justify-between py-2 text-sm">
-          <span className="text-muted">{settings.tagline}</span>
-          <a href={`tel:${settings.phone.replace(/\s/g, "")}`} className="font-medium text-accent hover:text-accent-dark">
-            {settings.phone}
-          </a>
-        </Container>
-      </div>
-
       {/* Mobilni red: burger levo, logo centrirano, CTA desno */}
       <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-2 py-4 md:hidden">
         <div className="flex justify-start">
@@ -42,12 +33,12 @@ export async function Header() {
           {settings.title}
         </Link>
         <div className="flex justify-end">
-          <Link
-            href="/kontakt"
+          <a
+            href={`tel:${settings.phone.replace(/\s/g, "")}`}
             className="rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-dark"
           >
-            Kontakt
-          </Link>
+            Pozovi
+          </a>
         </div>
       </Container>
 
@@ -82,12 +73,12 @@ export async function Header() {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/kontakt"
+        <a
+          href={`tel:${settings.phone.replace(/\s/g, "")}`}
           className="rounded-md bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:bg-accent-dark"
         >
-          Besplatna procena
-        </Link>
+          {settings.phone}
+        </a>
       </Container>
     </header>
   );

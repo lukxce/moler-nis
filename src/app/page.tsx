@@ -42,10 +42,11 @@ export default async function HomePage() {
         <Container className="relative grid grid-cols-1 items-center gap-12 py-16 md:grid-cols-2 md:py-24">
           <div>
             <h1 className="text-4xl font-bold leading-[1.1] text-navy sm:text-6xl">
-              Gletovanje, krečenje i <span className="text-accent">fasade</span> u {settings.city}u i okolini
+              Molerski i <span className="text-accent">fasadni radovi</span> u {settings.city}u
             </h1>
             <p className="mt-5 max-w-md text-lg text-muted">
-              Gletovanje, farbanje, fasade i sanacija vlage, uredno i po dogovorenom roku.{" "}
+              Gletovanje, krečenje, fasade i sanacija vlage u {settings.city}u i okolini,
+              uredno i po dogovorenom roku.{" "}
               {settings.foundedYear
                 ? `Preko ${new Date().getFullYear() - settings.foundedYear} godina iskustva na terenu.`
                 : "Dugogodišnje iskustvo na terenu."}
