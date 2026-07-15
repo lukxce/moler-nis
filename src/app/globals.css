@@ -2,11 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #4a1d26;
-  --color-ink: #4a1d26;
-  --color-ink-light: #632834;
+  --foreground: #241f1c;
+  --color-ink: #241f1c;
+  --color-ink-light: #3a332e;
   --color-accent: #d9694a;
   --color-accent-dark: #a8402a;
+  --color-burgundy: #4a1d26;
+  --color-burgundy-light: #632834;
   --color-muted: #6b5a57;
   --color-surface: #f4f1ed;
 }
@@ -18,6 +20,8 @@
   --color-navy-light: var(--color-ink-light);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
+  --color-burgundy: var(--color-burgundy);
+  --color-burgundy-light: var(--color-burgundy-light);
   --color-muted: var(--color-muted);
   --color-surface: var(--color-surface);
   --font-sans: var(--font-geist-sans);

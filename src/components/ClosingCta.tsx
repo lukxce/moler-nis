@@ -4,7 +4,7 @@ export function ClosingCta({ phone }: { phone: string }) {
   return (
     <section className="py-10">
       <Container>
-        <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-gradient-to-br from-navy to-navy-light p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-10">
+        <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-gradient-to-br from-accent to-accent-dark p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-10">
           <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-3xl" />
           <div>
             <span className="font-mono text-sm font-semibold uppercase tracking-wide text-white/70">
@@ -20,7 +20,7 @@ export function ClosingCta({ phone }: { phone: string }) {
           </div>
           <a
             href={`tel:${phone.replace(/\s/g, "")}`}
-            className="shrink-0 rounded-md bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:bg-white/90"
+            className="shrink-0 rounded-md bg-burgundy px-6 py-3 text-sm font-semibold text-white transition hover:bg-burgundy-light"
           >
             Pozovite {phone}
           </a>

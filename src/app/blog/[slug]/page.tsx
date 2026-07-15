@@ -181,7 +181,7 @@ export default async function BlogPostPage(
               </div>
             )}
 
-            <div className="mt-10 rounded-lg bg-navy p-6 text-white sm:p-8">
+            <div className="mt-10 rounded-lg bg-burgundy p-6 text-white sm:p-8">
               <p className="text-lg font-semibold">Treba vam neka od ovih usluga?</p>
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {serviceLinks.map((link) => (

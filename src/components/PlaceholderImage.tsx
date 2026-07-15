@@ -1,7 +1,7 @@
 type PlaceholderImageProps = {
   label: string;
   className?: string;
-  tone?: "navy" | "light";
+  tone?: "navy" | "burgundy" | "light";
 };
 
 export function PlaceholderImage({
@@ -10,10 +10,12 @@ export function PlaceholderImage({
   tone = "navy",
 }: PlaceholderImageProps) {
   const bg =
-    tone === "navy"
-      ? "bg-gradient-to-br from-navy to-navy-light"
-      : "bg-gradient-to-br from-surface to-white";
-  const text = tone === "navy" ? "text-white/60" : "text-navy/40";
+    tone === "burgundy"
+      ? "bg-gradient-to-br from-burgundy to-burgundy-light"
+      : tone === "navy"
+        ? "bg-gradient-to-br from-navy to-navy-light"
+        : "bg-gradient-to-br from-surface to-white";
+  const text = tone === "light" ? "text-navy/40" : "text-white/60";
 
   return (
     <div
@@ -31,7 +33,7 @@ export function PlaceholderImage({
       </svg>
       <span
         className={`absolute bottom-2 left-2 rounded bg-black/30 px-2 py-1 text-[10px] font-medium ${
-          tone === "navy" ? "text-white/80" : "text-navy/60"
+          tone === "light" ? "text-navy/60" : "text-white/80"
         }`}
       >
         {label}

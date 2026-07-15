@@ -246,7 +246,7 @@ export default async function HomePage() {
       </section>
 
       {/* About */}
-      <section className="relative overflow-hidden bg-navy py-16 text-white">
+      <section className="relative overflow-hidden bg-burgundy py-16 text-white">
         <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-10 md:grid-cols-2">
           {settings.aboutImageUrl ? (
@@ -256,7 +256,7 @@ export default async function HomePage() {
           ) : (
             <PlaceholderImage
               label="Slika: moler na terenu tokom fasadnih radova"
-              tone="navy"
+              tone="burgundy"
               className="h-72 w-full rounded-lg ring-1 ring-white/10 sm:h-96"
             />
           )}
