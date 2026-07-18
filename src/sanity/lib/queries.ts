@@ -6,7 +6,7 @@ export const servicesQuery = groq`*[_type == "service"] | order(order asc, _crea
 
 export const serviceBySlugQuery = groq`*[_type == "service" && slug.current == $slug][0]`
 
-export const servicePagesQuery = groq`*[_type == "servicePage"]`
+export const servicePagesQuery = groq`*[_type == "servicePage"] | order(order asc)`
 
 export const servicePageBySlugQuery = groq`*[_type == "servicePage" && slug.current == $slug][0]`
 

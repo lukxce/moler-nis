@@ -30,6 +30,12 @@ export const servicePage = defineType({
       rows: 2,
     }),
     defineField({
+      name: 'order',
+      title: 'Redosled prikaza',
+      description: 'Manji broj se prikazuje prvi na početnoj strani i u meniju',
+      type: 'number',
+    }),
+    defineField({
       name: 'image',
       title: 'Slika (opciono)',
       description: 'Prikazuje se u sekciji "Zašto izabrati nas"',
