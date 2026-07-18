@@ -11,7 +11,7 @@ export const siteSettings = defineType({
       name: 'title',
       title: 'Naziv firme',
       type: 'string',
-      initialValue: 'Moler Pro Niš',
+      initialValue: 'Moler Niš',
     }),
     defineField({
       name: 'tagline',

@@ -90,7 +90,7 @@ export const blogPost = defineType({
       name: 'author',
       title: 'Autor',
       type: 'string',
-      initialValue: 'Moler Pro Niš',
+      initialValue: 'Moler Niš',
     }),
     seoField,
   ],

@@ -10,7 +10,7 @@ import {projectId, dataset, apiVersion} from './src/sanity/lib/client'
 export default defineConfig({
   basePath: '/studio',
   name: 'molernis',
-  title: 'Moler Pro Niš — Admin panel',
+  title: 'Moler Niš — Admin panel',
   projectId,
   dataset,
   schema,

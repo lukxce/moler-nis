@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Container } from "@/components/Container";
+import { Logo } from "@/components/Logo";
 import { getSiteSettings } from "@/lib/data";
 import { formatServiceAreas } from "@/lib/format";
 
@@ -21,7 +22,7 @@ export async function Footer() {
     <footer className="mt-10 border-t border-black/10 bg-background">
       <Container className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 md:grid-cols-4">
         <div>
-          <h3 className="text-lg font-bold text-navy">{settings.title}</h3>
+          <h3 className="text-lg font-bold text-navy"><Logo title={settings.title} /></h3>
           <p className="mt-2 text-sm text-muted">{settings.tagline}</p>
           {settings.foundedYear && (
             <p className="mt-4 text-sm text-muted/80">

@@ -24,7 +24,7 @@ function bullets(items: string[]) {
 }
 
 export const siteSettings = {
-  title: "Moler Pro Niš",
+  title: "Moler Niš",
   tagline: "Krečenje, fasade i dekorativni premazi u Nišu, uredno i na vreme",
   phone: "065 781 4923",
   phoneSecondary: "018 452 990",
