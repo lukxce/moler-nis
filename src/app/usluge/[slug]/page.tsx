@@ -234,7 +234,13 @@ export default async function UslugaDetailPage(
             </div>
             {page.imageUrl ? (
               <div className="relative h-72 w-full overflow-hidden rounded-lg sm:h-96">
-                <Image src={page.imageUrl} alt={page.title} fill className="object-cover" />
+                <Image
+                  src={page.imageUrl}
+                  alt={page.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             ) : (
               <PlaceholderImage
