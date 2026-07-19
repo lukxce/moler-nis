@@ -169,6 +169,7 @@ export default async function HomePage() {
                       src={page.imageUrl}
                       alt={page.title}
                       fill
+                      quality={60}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition duration-500 group-hover:scale-105"
                     />
