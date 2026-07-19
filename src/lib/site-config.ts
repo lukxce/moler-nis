@@ -1,2 +1,2 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://molernis.rs";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.molernis.rs";
