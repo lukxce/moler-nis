@@ -9,7 +9,7 @@ const serviceLinks = [
   { href: "/usluge/krecenje", label: "Krečenje" },
   { href: "/usluge/gletovanje", label: "Gletovanje" },
   { href: "/usluge/fasadni-radovi", label: "Fasadni radovi" },
-  { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi" },
+  { href: "/usluge/dekorativne-tehnike", label: "Dekorativne tehnike" },
   { href: "/usluge/tapete", label: "Tapete" },
   { href: "/usluge/vlaga", label: "Vlaga" },
 ];

@@ -15,6 +15,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/cenovnik`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/kontakt`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE_URL}/usluge/dekorativne-tehnike`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/usluge/marmorino-premaz`, changeFrequency: "monthly", priority: 0.8 },
   ];
 
   const servicePageRoutes: MetadataRoute.Sitemap = servicePages.map((page) => ({

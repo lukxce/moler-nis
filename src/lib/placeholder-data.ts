@@ -797,6 +797,58 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Da li se jeftinija boja uopšte isplati?", answer: "Da, za plafone i manje korišćene prostorije gde je habanje minimalno, jeftinija boja je razumna ušteda." },
     ],
   },
+  {
+    slug: "koliko-kosta-krecenje-stana-u-nisu",
+    title: "Koliko košta krečenje stana u Nišu: realni primeri iz prakse",
+    category: "saveti",
+    excerpt:
+      "Cena krečenja u Nišu je i do 40% niža nego u Beogradu, ali krajnji iznos i dalje zavisi od veličine, stanja zidova i izbora boje. Evo realnih primera po tipu stana.",
+    summary:
+      "Cena krečenja stana u Nišu kreće se od 1.5 do 2.5 EUR po kvadratnom metru za standardno belo krečenje, što je znatno povoljnije od beogradskog proseka od 3 do 3.5 EUR/m2. Razlika postoji jer su ukupni troškovi poslovanja u Nišu niži. U ovom tekstu su konkretni primeri po tipu stana, od garsonjere do trosobnog, sa realnim rasponom cena kakav klijenti zaista dobiju na ponudi.",
+    keyTakeaways: [
+      "Standardno belo krečenje u Nišu košta 1.5 do 2.5 EUR/m2, u Beogradu 3 do 3.5 EUR/m2",
+      "Garsonjera (do 30 m2): ukupno 80 do 130 EUR sa pripremom",
+      "Dvosoban stan (50 do 65 m2): ukupno 150 do 280 EUR u zavisnosti od stanja zidova",
+      "Gletovanje pre krečenja može udvostručiti cenu, ali je potrebno samo ako su zidovi u lošem stanju",
+    ],
+    publishedAt: "2026-07-30",
+    body: [
+      p("Jedno od prvih pitanja pri svakom uređenju stana je koliko košta krečenje, a odgovor koji se najčešće čuje, 'zavisi', nikoga ne zadovoljava. U ovom tekstu su realni primeri iz prakse, sa rasponom cena kakav klijenti u Nišu zaista dobijaju na ponudi, razložen po tipu stana i vrsti posla."),
+      h2("Zašto je Niš jeftiniji od Beograda"),
+      p("Standardno belo krečenje u Nišu kreće se od 1.5 do 2.5 EUR po kvadratnom metru zidne i plafonske površine. U Beogradu isti posao košta od 3 do 3.5 EUR/m2, ponekad i više u centralnim opštinama. Razlika nije u kvalitetu rada nego u ukupnim troškovima: cena materijala je svuda ista jer se koristi ista boja i glet masa, ali troškovi života, logistike i zakupa su u Nišu niži, pa je i cena rada niža."),
+      p("To nije razlog za loš posao po niskoj ceni, nego činjenica koju vredi znati ako poredite ponude ili ako ste se upravo doselili iz Beograda i očekujete beogradske cene. Konkurencija u Nišu je ozbiljna i fer cena je nešto što svaki moler mora da ponudi da bi imao posla."),
+      h2("Cena po tipu stana: realni rasponi"),
+      h3("Garsonjera (do 30 m2)"),
+      p("Standardno belo krečenje jednim slojem, sa osnovnim pranjem i pripremom: 80 do 130 EUR ukupno. Posao traje jedan dan i ne zahteva posebnu organizaciju. Ako su zidovi u dobrom stanju, ovo je najjednostavniji i najjeftiniji molerski posao."),
+      h3("Jednosoban stan (30 do 45 m2)"),
+      p("Belo krečenje sa pripremom: 100 do 180 EUR. Ako stan ima hodnik sa oštećenjima na zidovima (čest slučaj u starijim zgradama), dodaje se lokalno gletovanje na kritičnim mestima, što može povisiti cenu za 30 do 50 EUR."),
+      h3("Dvosoban stan (50 do 65 m2)"),
+      p("Belo krečenje sa pripremom: 150 do 280 EUR. Raspon je širi jer dvosobni stanovi u Nišu variraju od novogradnje sa ravnim gips-karton zidovima do starijih stanova sa malterisanim zidovima koji traže ozbiljniju pripremu. U prvom slučaju bliže ste donjoj granici, u drugom gornjoj."),
+      h3("Trosoban stan (70 do 90 m2)"),
+      p("Belo krečenje sa pripremom: 200 do 370 EUR. Posao obično traje dva do tri dana. Ako se radi kompletno gletovanje svih zidova pre krečenja, cena može biti i duplo viša, ali to je potrebno samo ako su zidovi u zaista lošem stanju, što nije čest slučaj u redovnom osvežavanju."),
+      h2("Šta još utiče na cenu"),
+      ...bullets([
+        "Broj slojeva: dva sloja boje košta oko 50% više od jednog, ali daje bolje pokriven i trajniji rezultat",
+        "Boja u tonu: pigmentirana boja košta nešto više od bele i obično zahteva dva sloja za ravnomerno pokrivanje",
+        "Stanje zidova: ako su potrebne popravke pukotina, gletovanje ili bandažiranje, to je posebna stavka",
+        "Visina plafona: stanovi sa plafonima iznad 2.8m zahtevaju platformu ili posebne valjke, što produžava posao",
+        "Spaletne: obrada prozorskih i vratnih spaletni se naplaćuje po komadu, jer je detaljan i spor posao",
+      ]),
+      h2("Gletovanje: kad je zaista potrebno"),
+      p("Gletovanje je priprema zida za farbanje koja se radi samo kada je površina neravna, ispucala ili oštećena. U praksi, manji deo stanova u Nišu zahteva kompletno gletovanje svih zidova. Češći slučaj je lokalno gletovanje na mestima gde je malter oštećen, ugao otučen ili prethodna boja ispucala."),
+      p("Razlika u ceni je značajna: samo gletovanje bez farbanja košta od 3 do 5 EUR/m2, a uz farbanje ukupna cena po metru se praktično duplira. Zato je poštena procena na licu mesta ključna, jer nepošteni izvođači znaju da preporuče kompletno gletovanje i tamo gde nije potrebno, čime nepotrebno dupliraju cenu."),
+      h2("Kako izgleda ponuda kod mene"),
+      p("Dolazim na besplatan obilazak, gledam stanje zidova i pitam šta klijent želi. Na osnovu toga dajem fiksnu cenu sa spiskom stavki. Ako je gletovanje potrebno, jasno označim gde i zašto, a ne 'kompletno gletovanje' za stan koji to ne traži. Cena važi do početka radova i ne menja se na licu mesta, jer sam sve proverio pre ponude."),
+      p("Za stan u prosečnom stanju u Nišu, gde su zidovi ravni i potrebno je samo osvežavanje, krajnja cena je na donjem delu raspona navedenog iznad. Za stan posle lošeg majstora ili sa ozbiljnijim oštećenjima, cena ide ka gornjem delu, ali u oba slučaja znate tačno koliko pre nego što posao počne."),
+    ],
+    faq: [
+      { question: "Da li je vaša cena po kvadratnom metru poda ili zidne površine?", answer: "Po kvadratnom metru zidne i plafonske površine koja se zaista farba. To je preciznije i poštnije od naplaćivanja po kvadratu poda, jer ista soba može imati različitu visinu plafona i različit broj zidova za farbanje." },
+      { question: "Da li cena uključuje materijal?", answer: "Da, boja, valjci, zaštita poda i nameštaja su uključeni u cenu. Jedini slučaj gde materijal nije u ceni je ako klijent želi specifičnu premium boju koju sam nabavlja." },
+      { question: "Da li naplaćujete obilazak i procenu?", answer: "Ne, obilazak i procena su besplatni i bez obaveze. Dolazim, gledam stanje, dajem ponudu i klijent odlučuje." },
+      { question: "Koliko traje krečenje dvosobnog stana?", answer: "U proseku dva radna dana, sa pripremom i jednim slojem boje. Sa dva sloja ili lokalnim gletovanjem, računajte na tri dana." },
+      { question: "Da li radite vikendom?", answer: "Da, termini vikendom su mogući uz dogovor, bez doplate." },
+    ],
+  },
 ];
 
 export type ServicePageItem = {
