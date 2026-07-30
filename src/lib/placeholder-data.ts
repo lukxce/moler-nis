@@ -425,6 +425,7 @@ export type BlogPostItem = {
   excerpt: string;
   summary: string;
   keyTakeaways: string[];
+  coverImageUrl?: string;
   publishedAt: string;
   body: unknown[];
   faq: { question: string; answer: string }[];
@@ -811,6 +812,7 @@ export const blogPosts: BlogPostItem[] = [
       "Dvosoban stan (50 do 65 m2): ukupno 150 do 280 EUR u zavisnosti od stanja zidova",
       "Gletovanje pre krečenja može udvostručiti cenu, ali je potrebno samo ako su zidovi u lošem stanju",
     ],
+    coverImageUrl: "/images/blog/koliko-kosta-krecenje-stana-u-nisu.webp",
     publishedAt: "2026-07-30",
     body: [
       p("Jedno od prvih pitanja pri svakom uređenju stana je koliko košta krečenje, a odgovor koji se najčešće čuje, 'zavisi', nikoga ne zadovoljava. U ovom tekstu su realni primeri iz prakse, sa rasponom cena kakav klijenti u Nišu zaista dobijaju na ponudi, razložen po tipu stana i vrsti posla."),

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-type LinkItem = { href: string; label: string };
+type LinkItem = { href: string; label: string; children?: { href: string; label: string }[] };
 
 export function MobileMenu({
   serviceLinks,
@@ -66,14 +66,29 @@ export function MobileMenu({
               {uslugeOpen && (
                 <div className="flex flex-col gap-3 pb-2 pl-3 pt-1">
                   {serviceLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={closeAll}
-                      className="text-sm text-navy"
-                    >
-                      {link.label}
-                    </Link>
+                    <div key={link.href}>
+                      <Link
+                        href={link.href}
+                        onClick={closeAll}
+                        className="text-sm text-navy"
+                      >
+                        {link.label}
+                      </Link>
+                      {link.children && (
+                        <div className="mt-2 flex flex-col gap-2 pl-4">
+                          {link.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={closeAll}
+                              className="text-sm text-muted"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               )}
