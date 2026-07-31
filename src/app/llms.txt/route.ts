@@ -1,7 +1,7 @@
 import { getSiteSettings, getServicePages, getBlogPosts } from "@/lib/data";
 import { SITE_URL } from "@/lib/site-config";
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export async function GET() {
   const [settings, servicePages, posts] = await Promise.all([
