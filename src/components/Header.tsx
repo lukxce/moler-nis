@@ -14,6 +14,8 @@ const serviceLinks = [
     label: "Dekorativne tehnike",
     children: [
       { href: "/usluge/marmorino-premaz", label: "Marmorino premaz" },
+      { href: "/usluge/venecijanski-premaz", label: "Venecijanski premaz" },
+      { href: "/usluge/sahara-premaz", label: "Sahara premaz" },
     ],
   },
   { href: "/usluge/tapete", label: "Tapete" },

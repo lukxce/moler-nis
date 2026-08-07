@@ -35,8 +35,8 @@ const techniques = [
     title: "Venecijanski premaz",
     description:
       "Srodna tehnika sa marmorinom, sa dubljim sjajem i izraženijim slojevima. Svetlo igra po površini i menja utisak tokom dana. Najsporija tehnika za izvođenje, ali i najupečatljiviji rezultat.",
-    href: "/usluge/dekorativni-premazi",
-    label: "Sve o dekorativnim premazima",
+    href: "/usluge/venecijanski-premaz",
+    label: "Više o venecijanskom premazu",
   },
   {
     title: "Stencil art",
@@ -49,8 +49,8 @@ const techniques = [
     title: "Sahara efekat",
     description:
       "Peskovita, zemljana tekstura u toplim, prigušenim tonovima. Daje zidu suptilnu dubinu bez agresivnog uzorka. Najbolje funkcioniše na velikim, neisprekidanim površinama.",
-    href: "/usluge/dekorativni-premazi",
-    label: "Sve o dekorativnim premazima",
+    href: "/usluge/sahara-premaz",
+    label: "Više o sahara premazu",
   },
   {
     title: "Travertino efekat",

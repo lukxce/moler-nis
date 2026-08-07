@@ -851,6 +851,170 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Da li radite vikendom?", answer: "Da, termini vikendom su mogući uz dogovor, bez doplate." },
     ],
   },
+  {
+    slug: "kako-prepoznati-vlagu-na-zidu-pre-krecenja",
+    title: "Kako prepoznati vlagu na zidu i šta uraditi pre krečenja",
+    category: "saveti",
+    excerpt:
+      "Mrlja, ljuštenje, miris. Pre nego što pozovete molera da prefarba problem, evo kako da prepoznate da li je zid zaista suv ili samo tako izgleda.",
+    summary:
+      "Vlaga na zidu se prepoznaje po tri glavna znaka: tamnim mrljama koje menjaju oblik, ljuštenju ili mehurićima boje, i karakterističnom ustajalom mirisu. Farbanje preko aktivne vlage privremeno prekrije problem, ali on se vrati za nekoliko nedelja, jer boja nije barijera za vodenu paru. Pravi redosled je uvek: prvo uzrok, pa sušenje, pa tek onda gletovanje i farbanje.",
+    keyTakeaways: [
+      "Tamna mrlja koja raste ili menja oblik znači da je izvor vlage i dalje aktivan",
+      "Ljuštenje i mehurići na boji su znak da vlaga gura sloj odozdo, ne površinski problem",
+      "Ustajao, zemljani miris bez vidljive mrlje često znači buđ iza nameštaja ili u uglu",
+      "Test folijom otkriva za par dana da li curenje i dalje postoji",
+      "Farbanje bez rešavanja uzroka je trošak koji se ponavlja, ne rešenje",
+    ],
+    publishedAt: "2026-08-05",
+    body: [
+      p("Skoro svake nedelje me neko pozove da prefarbam mrlju na plafonu ili zidu, a razgovor krene istim pitanjem: da li je to samo estetski problem ili nešto ozbiljnije. Odgovor se često vidi već na prvi pogled, ako znate na šta da obratite pažnju. Ovaj tekst je vodič kroz znake vlage koje možete sami da prepoznate pre nego što pozovete molera, i objašnjenje zašto je redosled radova bitniji od same boje."),
+      h2("Znak 1: mrlja koja menja oblik ili raste"),
+      p("Stara, suva mrlja ima oštre, stabilne ivice i ne menja se tokom vremena. Ako fotografišete mrlju danas i za mesec dana ponovo, i ivica se pomerila ili je mrlja postala tamnija posle kiše, izvor vlage je i dalje aktivan. Ovo je najpouzdaniji znak i najlakše ga je proveriti bez ikakve opreme, samo strpljenjem."),
+      p("Praktičan test koji predlažem klijentima: prelepite komad providne najlon folije preko mrlje, dobro zalepite ivice trakom, i ostavite par dana. Ako se ispod folije pojavi kondenzacija ili kapljice vode, curenje je aktivno. Ako folija ostane suva, mrlja je stara i može se sanirati bez čekanja na spoljnu intervenciju."),
+      h2("Znak 2: ljuštenje, mehurići i pucanje boje"),
+      p("Kada boja počne da se ljušti u pahuljicama ili se na površini pojave mali mehurići ispunjeni vazduhom ili vlagom, to znači da vlaga gura sloj boje odozdo. Ovo nije mehaničko oštećenje niti loš kvalitet boje, nego direktna posledica vlage koja pokušava da izađe kroz zid i nailazi na sloj koji je propušta sporije nego što bi trebalo."),
+      p("Ljuštenje se najčešće javlja u donjem delu zida kod kapilarne vlage, ili na plafonu i gornjem delu zida kod curenja sa krova, terase ili instalacije. Pozicija ljuštenja je koristan podatak, jer već sama govori odakle problem verovatno dolazi."),
+      h2("Znak 3: miris bez vidljive mrlje"),
+      p("Karakterističan, ustajao, zemljan miris koji se oseti čim uđete u prostoriju, a da na zidovima ne vidite ništa sumnjivo, često znači da se buđ razvija na mestu koje ne gledate direktno: iza ormana, iza uzglavlja kreveta, u uglu iza zavese, ili u donjem delu zida pod plintom. Miris je često raniji signal od vizuelnog znaka, jer se gljivice razvijaju u zaklonjenim, slabo provetrenim uglovima pre nego što postanu vidljive na otvorenoj površini."),
+      p("Ako osećate ovaj miris, vredi pomeriti nameštaj i pogledati zid iza njega pre nego što zaključite da problema nema."),
+      h2("Odakle vlaga najčešće dolazi"),
+      ...bullets([
+        "Oštećena hidroizolacija na krovu ili terasi iznad prostorije",
+        "Neispravna ili stara vodovodna instalacija unutar zida ili plafona",
+        "Kondenzacija zbog lošeg provetravanja, najčešće u kupatilima bez ventilacije",
+        "Prokišnjavanje kroz oštećenu fasadu ili lošu obradu oko prozora",
+        "Curenje od suseda iznad, posebno u zgradama sa starijim instalacijama",
+        "Kapilarna vlaga koja se penje iz temelja kod prizemnih prostorija",
+      ]),
+      p("Za većinu ovih uzroka, izuzev kapilarne vlage koja se rešava specijalizovanim materijalima, potreban je majstor druge struke: vodoinstalater za instalaciju, krovopokrivač ili izvođač hidroizolacije za krov i terasu. Moj posao kao molera počinje tek kada je taj deo rešen, ne pre."),
+      h2("Zašto farbanje preko aktivne vlage ne rešava ništa"),
+      p("Standardna disperzivna boja nije napravljena da bude barijera za vodu ili vodenu paru. Kada se mrlja prefarba bez rešavanja uzroka, boja privremeno prekrije tamnu površinu i prostorija izgleda sređeno prvih nekoliko nedelja. Zatim vlaga, koja nikada nije prestala da postoji, ponovo probije kroz novi sloj i mrlja se vrati, često veća i tamnija nego pre, jer se ispod boje u međuvremenu razvila dodatna vlaga i, često, buđ."),
+      p("Ovo nije loše urađen molerski posao, nego pogrešan redosled: farbanje je poslednji korak u sanaciji, ne prvi. Ozbiljan izvođač će vam to reći pre nego što uzme kičicu u ruke, čak i ako to znači da posao odloži dok se ne reši uzrok."),
+      h2("Šta znači kad zid izgleda suvo, ali nije"),
+      p("Česta greška kod hitnih renoviranja, pred useljenje ili prodaju stana, jeste da zid izgleda suvo na površini dok unutrašnjost žbuke i dalje zadržava vlagu. Malter je porozan materijal i suši se sporo, od nekoliko dana do nekoliko nedelja u zavisnosti od veličine zahvaćene površine i vremena. Ako se prefarba prerano, vlaga zarobljena ispod novog sloja nema kuda da izađe, što stvara idealne uslove za razvoj buđi koja se ne vidi dok se ne pojavi miris ili dok se boja ponovo ne počne ljuštiti."),
+      h2("Pravilan redosled sanacije"),
+      h3("1. Otklanjanje uzroka"),
+      p("Bez ovog koraka sve ostalo je privremeno rešenje. Ako curenje dolazi spolja ili iz instalacije, taj deo mora prvo da se popravi, i to od strane majstora odgovarajuće struke."),
+      h3("2. Sušenje zida"),
+      p("Zidu je potrebno vreme da prirodno izgubi vlagu, od nekoliko dana do nekoliko nedelja zavisno od veličine zahvaćene površine. Veštačko ubrzavanje grejanjem može pomoći, ali ne zamenjuje vreme u potpunosti."),
+      h3("3. Mehaničko čišćenje površine"),
+      p("Uklanjaju se svi slojevi zahvaćeni vlagom ili buđi, do zdrave podloge, uz odgovarajuću zaštitu (masku i rukavice) zbog spora koje se oslobađaju tokom čišćenja."),
+      h3("4. Izolacioni ili antifungalni premaz"),
+      p("Nanosi se specijalizovani premaz koji sprečava da eventualni ostaci mrlje probiju kroz nove slojeve, ili antifungalni premaz koji sprečava ponovni razvoj gljivica. Ovo je ključna razlika u odnosu na običnu boju, koja tu zaštitu nema."),
+      h3("5. Standardna obrada: gletovanje i farbanje"),
+      p("Tek na kraju se radi uobičajena obrada, gletovanje ako je potrebno i završno farbanje, sada na zdravoj i suvoj podlozi koja neće vratiti problem za mesec dana."),
+      h2("Kapilarna vlaga je poseban slučaj"),
+      p("Kod prizemnih prostorija, vlaga koja se penje iz temelja naviše kroz zid prepoznaje se po beličastim naslagama soli i ljuštenju maltera pri samom dnu zida, za razliku od mrlje od curenja koja se obično javlja na plafonu ili gornjem delu zida. Ovaj tip vlage se ne rešava standardnim izolacionim premazom, nego kombinacijom sanacionog maltera i specijalizovanih premaza prilagođenih baš kapilarnom prodoru, i gotovo uvek zahteva obilazak pre davanja konačne procene."),
+      h2("Šta uraditi ako sumnjate na vlagu, korak po korak"),
+      ...bullets([
+        "Zabeležite oblik i veličinu mrlje, fotografijom, i uporedite za dve do tri nedelje",
+        "Uradite test folijom preko mrlje i sačekajte par dana",
+        "Pomerite nameštaj koji stoji uz sumnjiv zid i proverite šta je iza",
+        "Ako je curenje aktivno, prvo pozovite odgovarajućeg majstora za uzrok, ne molera",
+        "Tek kad je zid suv i uzrok otklonjen, zakažite sanaciju i farbanje",
+      ]),
+      p("Ako niste sigurni šta gledate, slobodno pozovite i opišite mi šta primećujete. Često mogu da procenim, samo na osnovu opisa ili fotografije, da li je verovatno reč o staroj, suvoj mrlji ili aktivnom problemu koji prvo treba rešiti na drugom mestu."),
+    ],
+    faq: [
+      {
+        question: "Da li svaka mrlja na zidu znači aktivnu vlagu?",
+        answer:
+          "Ne. Stara, suva mrlja ima stabilne ivice koje se ne menjaju tokom vremena i može se sanirati bez čekanja. Test folijom preko mrlje na par dana je najpouzdaniji način da proverite da li je curenje i dalje aktivno.",
+      },
+      {
+        question: "Mogu li sam da prefarbam mrlju bez sanacije?",
+        answer:
+          "Možete, ali ako je uzrok vlage i dalje prisutan, mrlja će se vratiti za nekoliko nedelja ili meseci, često veća nego pre. Farbanje bez rešavanja uzroka je trošak koji se ponavlja, ne rešenje.",
+      },
+      {
+        question: "Osećam miris vlage ali ne vidim mrlju na zidu, šta da radim?",
+        answer:
+          "Pomerite nameštaj koji stoji uz zidove i proverite iza njega, posebno iza ormana i uzglavlja kreveta. Buđ se često razvija u zaklonjenim, slabo provetrenim uglovima pre nego što postane vidljiva na otvorenoj površini, a miris je često raniji signal od vizuelnog znaka.",
+      },
+      {
+        question: "Ko rešava uzrok vlage, vi ili neko drugi?",
+        answer:
+          "Zavisi od uzroka. Za oštećenu hidroizolaciju ili vodovodnu instalaciju potreban je krovopokrivač ili vodoinstalater. Ja kao moler radim sanaciju zida nakon što je uzrok otklonjen, izuzev kod kapilarne vlage gde deo posla, sanacioni malter, spada u moj domen.",
+      },
+      {
+        question: "Koliko dugo treba da se zid suši pre farbanja?",
+        answer:
+          "Zavisi od veličine zahvaćene površine, od nekoliko dana do nekoliko nedelja prirodnog sušenja. Veštačko ubrzavanje grejanjem može pomoći, ali ne zamenjuje vreme u potpunosti, i farbanje pre nego što je zid zaista suv skoro uvek dovodi do povratka problema.",
+      },
+    ],
+  },
+  {
+    slug: "koliko-gleta-ide-po-kvadratu",
+    title: "Koliko gleta ide po kvadratu: potrošnja materijala u praksi",
+    category: "priprema",
+    excerpt:
+      "Starto ili fino, jedan sloj ili dva, ravan zid ili oštećen. Evo kako se realno računa potrošnja glet mase, sa brojkama iz svakodnevnog posla, ne iz deklaracije proizvođača.",
+    summary:
+      "Potrošnja gleta zavisi od tipa (starto ili fino), broja slojeva i stanja zida. Startni glet u standardnom sloju troši oko 1 do 1.5 kilograma po kvadratu, fini glet oko 0.3 do 0.5 kilograma po kvadratu, ali stariji, neravni zidovi mogu potrošiti i duplo više, jer se debljina sloja prilagođava svakoj neravnini pojedinačno, ne ujednačeno preko cele površine.",
+    keyTakeaways: [
+      "Startni glet u standardnom sloju: oko 1 do 1.5 kg/m2 po sloju",
+      "Fini glet, tanji finišni sloj: oko 0.3 do 0.5 kg/m2",
+      "Neravan, star zid lako potroši duplo više gleta od deklarisane norme",
+      "Gletovanje plafona uvek troši više materijala nego zid iste površine",
+      "Deklaracija na kesi je za ravnu podlogu, realna potrošnja zavisi od stanja zida",
+    ],
+    publishedAt: "2026-08-06",
+    body: [
+      p("Pitanje koliko gleta treba za sobu čujem često, obično kada klijent sam nabavlja materijal ili želi da proveri ponudu. Odgovor sa deklaracije na kesi retko odgovara stvarnosti, jer proizvođač računa potrošnju za idealno ravnu podlogu, a takva podloga je u praksi retkost. Ovaj tekst objašnjava realnu potrošnju, iz iskustva sa terena, ne iz tehničkog lista."),
+      h2("Starto i fino: dva različita materijala, dve različite potrošnje"),
+      p("Startni glet (ili grubi glet) je prvi sloj koji se nanosi na zid, deblji, sa zadatkom da poravna veće neravnine, popuni pukotine i pripremi podlogu. Fini glet je tanak, završni sloj koji se nanosi preko startnog, sa zadatkom da površinu učini potpuno glatkom, spremnom za farbanje bez vidljivih tragova alata."),
+      p("Potrošnja se drastično razlikuje jer se radi o različitoj debljini sloja. Startni glet u standardnom sloju od oko 2 do 3 milimetra troši između 1 i 1.5 kilograma po kvadratnom metru. Fini glet, koji se nanosi u sloju od svega pola milimetra do milimetar, troši između 0.3 i 0.5 kilograma po kvadratu."),
+      h2("Kako stanje zida menja potrošnju"),
+      p("Deklarisana potrošnja na kesi glet mase pretpostavlja ravnu podlogu i ujednačen sloj preko cele površine. U praksi, zid retko ima ujednačenu debljinu potrebnog gleta: jedno mesto zahteva samo tanak izravnavajući premaz, dok susedno mesto, gde je malter oštećen ili je zid ranije loše obrađen, može zahtevati sloj i tri do četiri puta deblji."),
+      p("Zato je realan raspon potrošnje za ceo zid širi nego što deklaracija sugeriše. Za nov, dobro malterisan zid u novogradnji, potrošnja startnog gleta često je bliža donjoj granici od 1 kilograma po kvadratu. Za stariji zid u stanu sa nekoliko prethodnih slojeva boje, pukotinama i neravninama, potrošnja lako pređe 2 kilograma po kvadratu, ponekad i više na pojedinim mestima."),
+      h2("Plafon troši više od zida"),
+      p("Kod plafona se potrošnja gleta po pravilu povećava u odnosu na zid iste površine, iz dva razloga. Prvo, plafoni u starijim zgradama često imaju izraženije neravnine od zidova, jer su rađeni brže i sa manje pažnje na ravnost prilikom originalne gradnje. Drugo, rad nad glavom je fizički teži i sporiji, pa se u praksi nanosi malo deblji sloj da bi se izbeglo prelaženje istog mesta više puta."),
+      h2("Konkretan primer: dvosobni stan"),
+      p("Uzmimo dvosoban stan od 55 kvadrata, sa oko 120 kvadratnih metara zidne i plafonske površine koja se gletuje (zidovi i plafon zajedno, uobičajena razmera za stan te veličine). Ako je zid u proseku dobrog stanja i radi se standardni sloj starto i fino:"),
+      ...bullets([
+        "Startni glet: 120 m2 puta oko 1.2 kg/m2 (prosek za osrednje stanje zida) = oko 144 kilograma",
+        "Fini glet: 120 m2 puta oko 0.4 kg/m2 = oko 48 kilograma",
+        "Ukupno: oko 190 do 200 kilograma glet mase za ceo stan",
+      ]),
+      p("Ovo je orijentacioni primer za prosečno stanje zidova. Za stan u lošijem stanju, sa više oštećenja i starijih slojeva boje, računajte na dvadeset do trideset posto veću potrošnju startnog gleta, jer se najveća razlika uvek pojavljuje na tom prvom, debljem sloju."),
+      h2("Zašto ponude sa istom kvadraturom mogu imati različitu cenu materijala"),
+      p("Kad poredite dve ponude za isti stan, razlika u ceni materijala često dolazi upravo odavde: jedan izvođač je procenio stanje zida realno i uračunao veću potrošnju gleta, drugi je računao po deklaraciji sa kese kao da je zid savršeno ravan. Niža ponuda koja ne uzima u obzir stvarno stanje zidova ume da se pretvori u dodatni trošak na licu mesta, kada se ispostavi da je potrebno duplo više materijala od predviđenog."),
+      p("Zato pre davanja ponude uvek fizički pregledam zidove, provlačim rukom i posmatram pod uglom svetlosti da bih video neravnine koje se ne vide pri direktnom pogledu. Na osnovu toga dajem realniju procenu potrošnje, ne generičku po kvadratu."),
+      h2("Da li više slojeva finog gleta ima smisla"),
+      p("Za standardno bacanje na farbanje, jedan sloj finog gleta preko startnog je dovoljan, pod uslovom da je startni sloj dobro izravnat i osušen. Drugi sloj finog gleta ima smisla samo kada se traži izuzetno glatka površina, na primer pre sjajnijih završnih obrada boje koje ističu svaku sitnu neravninu, ili kada prvi sloj finog gleta ostavi vidljive tragove alata koje treba prekriti."),
+      p("Nepotreban drugi sloj finog gleta je čest način da se produži i poskupi posao bez stvarne koristi za rezultat. Ako vam izvođač predlaže dva sloja finog gleta za standardno belo krečenje na ravnom zidu, vredi pitati zašto."),
+      h2("Kako da sami proverite realnu potrošnju za svoj prostor"),
+      p("Izmerite kvadraturu zidova i plafona koje gletujete, pomnožite sa 1.2 kilograma za startni sloj kao prosečnu vrednost, i dodajte 0.4 kilograma za fini sloj. To vam daje okvirnu cifru u dobrom stanju zida. Ako je zid stariji ili primetno oštećen, dodajte dvadeset do trideset posto na startni deo računice. Ovo nije precizno kao procena na licu mesta, ali daje realniji okvir od pukog čitanja deklaracije sa kese."),
+    ],
+    faq: [
+      {
+        question: "Koliko gleta treba za sobu od 20 kvadrata?",
+        answer:
+          "Za standardnu sobu sa zidovima i plafonom, računajući oko 40 do 45 kvadrata obrađene površine, u proseku treba oko 50 do 55 kilograma startnog gleta i 16 do 18 kilograma finog, zavisno od stanja zida.",
+      },
+      {
+        question: "Zašto je deklarisana potrošnja na kesi gleta manja od stvarne?",
+        answer:
+          "Deklaracija pretpostavlja idealno ravnu podlogu i ujednačen tanak sloj preko cele površine. U praksi zid ima neravnine koje zahtevaju deblji sloj na pojedinim mestima, pa je stvarna potrošnja po pravilu veća, ponekad i duplo veća na starijim zidovima.",
+      },
+      {
+        question: "Da li plafon troši više gleta od zida?",
+        answer:
+          "Po pravilu da, jer su plafoni u starijim zgradama često neravniji, a rad nad glavom je teži, pa se u praksi nanosi malo deblji sloj da bi se izbeglo ponavljanje prelaska preko istog mesta.",
+      },
+      {
+        question: "Da li mi treba drugi sloj finog gleta?",
+        answer:
+          "Za standardno belo krečenje na dobro izravnatom startnom sloju, jedan sloj finog gleta je dovoljan. Drugi sloj ima smisla samo za posebno glatke, sjajnije završne obrade ili ako prvi sloj ostavi vidljive tragove alata.",
+      },
+      {
+        question: "Kako da procenim potrošnju gleta pre nego što kupim materijal?",
+        answer:
+          "Izmerite kvadraturu zidova i plafona, pomnožite sa oko 1.2 kg/m2 za startni sloj i 0.4 kg/m2 za fini sloj kao prosek za osrednje stanje zida. Za stariji ili oštećeniji zid dodajte dvadeset do trideset posto na startni deo, jer se najveća razlika u potrošnji pojavljuje baš tu.",
+      },
+    ],
+  },
 ];
 
 export type ServicePageItem = {
