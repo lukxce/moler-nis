@@ -867,6 +867,7 @@ export const blogPosts: BlogPostItem[] = [
       "Farbanje bez rešavanja uzroka je trošak koji se ponavlja, ne rešenje",
     ],
     publishedAt: "2026-08-05",
+    coverImageUrl: "/images/blog/kako-prepoznati-vlagu-na-zidu-pre-krecenja.webp",
     body: [
       p("Skoro svake nedelje me neko pozove da prefarbam mrlju na plafonu ili zidu, a razgovor krene istim pitanjem: da li je to samo estetski problem ili nešto ozbiljnije. Odgovor se često vidi već na prvi pogled, ako znate na šta da obratite pažnju. Ovaj tekst je vodič kroz znake vlage koje možete sami da prepoznate pre nego što pozovete molera, i objašnjenje zašto je redosled radova bitniji od same boje."),
       h2("Znak 1: mrlja koja menja oblik ili raste"),
@@ -960,6 +961,7 @@ export const blogPosts: BlogPostItem[] = [
       "Deklaracija na kesi je za ravnu podlogu, realna potrošnja zavisi od stanja zida",
     ],
     publishedAt: "2026-08-06",
+    coverImageUrl: "/images/blog/koliko-gleta-ide-po-kvadratu.webp",
     body: [
       p("Pitanje koliko gleta treba za sobu čujem često, obično kada klijent sam nabavlja materijal ili želi da proveri ponudu. Odgovor sa deklaracije na kesi retko odgovara stvarnosti, jer proizvođač računa potrošnju za idealno ravnu podlogu, a takva podloga je u praksi retkost. Ovaj tekst objašnjava realnu potrošnju, iz iskustva sa terena, ne iz tehničkog lista."),
       h2("Starto i fino: dva različita materijala, dve različite potrošnje"),
