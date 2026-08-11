@@ -1045,6 +1045,7 @@ export const blogPosts: BlogPostItem[] = [
       "Farbanje je po pravilu brže i jeftinije po kvadratu od postavljanja tapete",
       "Skidanje stare tapete je zaseban posao koji treba uračunati pre sledeće promene zida",
     ],
+    coverImageUrl: "/images/blog/farba-ili-tapeta-sta-je-bolji-izbor.webp",
     publishedAt: "2026-08-10",
     body: [
       p("Kad razgovaram sa klijentima o renoviranju sobe ili stana, posle boje i tona skoro uvek dođe i pitanje da li uopšte da se farba zid ili da se postavi tapeta. Oba rešenja imaju svoje mesto, i iskreno, retko postoji univerzalno tačan odgovor, nego zavisi od prostorije, budžeta i toga koliko često planirate da menjate izgled zidova. Evo kako ja objašnjavam razliku kad me klijent pita."),
