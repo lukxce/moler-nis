@@ -1,7 +1,10 @@
 import { getSiteSettings, getServicePages, getBlogPosts } from "@/lib/data";
 import { SITE_URL } from "@/lib/site-config";
 
-export const revalidate = 60;
+// Static until a webhook-triggered revalidateTag() invalidates it, instead
+// of a fixed 60s timer that regenerated this route on every request window
+// regardless of whether Sanity content changed.
+export const revalidate = false;
 
 export async function GET() {
   const [settings, servicePages, posts] = await Promise.all([

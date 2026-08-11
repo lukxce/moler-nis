@@ -10,9 +10,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { getSiteSettings } from "@/lib/data";
 import { SITE_URL } from "@/lib/site-config";
 
-// Content lives in Sanity now - without this, every static page is frozen
-// at build time and Studio edits never show up without a full redeploy.
-export const revalidate = 60;
+// Content lives in Sanity, but on-demand revalidation (via the
+// /api/revalidate webhook calling revalidateTag) now handles Studio edits -
+// a fixed 60s timer here forced EVERY route on the site to regenerate every
+// 60s regardless of whether content changed, which blew through Vercel's
+// ISR write-unit cap. Pages stay static until a tagged revalidateTag() call
+// invalidates them.
+export const revalidate = false;
 
 // Self-hosted Geist via the official `geist` package (next/font/local under
 // the hood) instead of next/font/google. The Google CDN splits Geist into
