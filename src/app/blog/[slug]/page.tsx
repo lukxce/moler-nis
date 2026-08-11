@@ -12,10 +12,10 @@ import { blogCategoryLabel, formatDate } from "@/lib/format";
 import { SITE_URL } from "@/lib/site-config";
 
 const serviceLinks = [
-  { href: "/usluge/unutrasnji-radovi", label: "Unutrašnji molerski radovi" },
+  { href: "/usluge/krecenje", label: "Unutrašnji molerski radovi" },
   { href: "/usluge/fasadni-radovi", label: "Fasadni radovi" },
   { href: "/usluge/dekorativni-premazi", label: "Dekorativni premazi i tapete" },
-  { href: "/usluge/sanacija-renoviranje", label: "Sanacija i renoviranje" },
+  { href: "/usluge/vlaga", label: "Sanacija i renoviranje" },
 ];
 
 export async function generateStaticParams() {
