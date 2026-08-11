@@ -56,8 +56,8 @@ const techniques = [
     title: "Travertino efekat",
     description:
       "Imitacija prirodnog travertino kamena sa karakterističnim porama i slojevitom površinom. Zahteva precizan rad pri kreiranju pora da izgledaju prirodno, ne šablonski.",
-    href: "/usluge/dekorativni-premazi",
-    label: "Sve o dekorativnim premazima",
+    href: "/usluge/travertino-efekat",
+    label: "Više o travertino premazu",
   },
   {
     title: "Concrete (betonski izgled)",

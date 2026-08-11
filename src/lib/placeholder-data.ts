@@ -22,6 +22,20 @@ function bullets(items: string[]) {
     children: [{ _type: "span", text }],
   }));
 }
+// Paragraf sa jednim ugrađenim linkom (koristi se za prirodno povezivanje ka
+// stranicama usluga unutar teksta bloga).
+function linkPara(before: string, linkText: string, href: string, after: string) {
+  return {
+    _type: "block",
+    style: "normal",
+    markDefs: [{ _type: "link", _key: "l1", href }],
+    children: [
+      { _type: "span", text: before },
+      { _type: "span", text: linkText, marks: ["l1"] },
+      { _type: "span", text: after },
+    ],
+  };
+}
 
 export const siteSettings = {
   title: "Moler Niš",
@@ -1015,6 +1029,149 @@ export const blogPosts: BlogPostItem[] = [
         answer:
           "Izmerite kvadraturu zidova i plafona, pomnožite sa oko 1.2 kg/m2 za startni sloj i 0.4 kg/m2 za fini sloj kao prosek za osrednje stanje zida. Za stariji ili oštećeniji zid dodajte dvadeset do trideset posto na startni deo, jer se najveća razlika u potrošnji pojavljuje baš tu.",
       },
+    ],
+  },
+  {
+    slug: "farba-ili-tapeta-sta-je-bolji-izbor",
+    title: "Farba ili tapeta: šta je bolji izbor za vaš prostor",
+    category: "unutrasnji",
+    excerpt:
+      "Pitanje koje čujem skoro na svakom drugom obilasku pred renoviranje. Evo kako realno porede trajnost, pranje, cenu i izgled, i kada predlažem jedno, kada drugo, a kada oboje.",
+    summary:
+      "Farba je brža, jeftinija i lakša za kasnije prefarbavanje, dok tapeta nudi šaru i teksturu koju boja sama ne može da postigne. Periva boja i vinil tapeta su podjednako periva rešenja za kuhinju i hodnik, dok papirna tapeta i mat boja ostaju za mirnije prostorije poput spavaće sobe.",
+    keyTakeaways: [
+      "Periva boja i vinil tapeta podnose brisanje podjednako dobro, papirna tapeta ne",
+      "Tapeta zahteva ravniji zid od boje, jer tanji materijal ističe svaku neravninu podloge",
+      "Farbanje je po pravilu brže i jeftinije po kvadratu od postavljanja tapete",
+      "Skidanje stare tapete je zaseban posao koji treba uračunati pre sledeće promene zida",
+    ],
+    publishedAt: "2026-08-10",
+    body: [
+      p("Kad razgovaram sa klijentima o renoviranju sobe ili stana, posle boje i tona skoro uvek dođe i pitanje da li uopšte da se farba zid ili da se postavi tapeta. Oba rešenja imaju svoje mesto, i iskreno, retko postoji univerzalno tačan odgovor, nego zavisi od prostorije, budžeta i toga koliko često planirate da menjate izgled zidova. Evo kako ja objašnjavam razliku kad me klijent pita."),
+      h2("Trajnost i otpornost na habanje"),
+      p("Kvalitetna disperzivna boja, nanesena u dva sloja na dobro pripremljenu podlogu, izdrži godinama bez vidljivog habanja, a sitna oštećenja se lako saniraju lokalnim doterivanjem istim tonom. Tapeta se ponaša različito zavisno od tipa: papirna je najosetljivija i lakše puca na spojevima ili se odvaja u uglovima, vinilna i netkana (flis) tapeta su znatno izdržljivije i bolje podnose udarce i habanje."),
+      p("Razlika koja se često zaboravi je popravka. Ogrebotinu na farbanom zidu prefarbate za pola sata. Oštećenje tapete, pogotovo ako je šara složena ili je prošlo par godina od postavljanja pa boja blago izbledi, teško se popravlja neupadljivo na jednom mestu, često je realnije menjati ceo pojas ili zid."),
+      h2("Periva boja i pranje"),
+      p("Za prostorije gde se zid često dodiruje ili prlja, kuhinja, hodnik, dečja soba, periva boja i vinilna tapeta su podjednako dobre opcije po pitanju čišćenja, obe podnose brisanje vlažnom krpom bez oštećenja površine. Razlika se pojavljuje kod papirne tapete, koja nije predviđena za vlažno brisanje i lako se ošteti ili izbledi ako se često pere."),
+      p("Ako imate malu decu ili kućne ljubimce, ovo je često presudan faktor, ne toliko sam izgled koliko to koliko lako mogu da obrišem otisak ruke ili flekicu bez traga."),
+      h2("Vizuelne mogućnosti: boja ili šara"),
+      linkPara(
+        "Boja daje neograničen izbor tona, ali ostaje ravna, jednobojna površina osim ako se ne radi neka od ",
+        "dekorativnih tehnika",
+        "/usluge/dekorativne-tehnike",
+        " poput marmorina ili travertino efekta, koje same po sebi imaju cenu i vreme izvođenja bliže tapeti nego standardnom farbanju. Tapeta, s druge strane, otvara mogućnost šare, teksture i motiva koje boja sama po sebi ne može da postigne, geometrijski uzorak, imitacija tekstila, fototapeta sa pejzažom."
+      ),
+      p("Za akcentni zid u dnevnom boravku ili u dečjoj sobi, tapeta često daje efektniji rezultat po uloženom trošku od farbe, jer nosi vizuelni fokus prostorije sama, bez potrebe za dodatnom dekoracijom."),
+      h2("Priprema podloge"),
+      p("Ovde tapeta postavlja veći zahtev. Boja, pogotovo mat, dosta dobro prikriva sitne neravnine zida. Tapeta je tanak materijal koji nalegne direktno na podlogu, pa se svaka izbočina, udubljenje ili trag prethodnog gletovanja vidi kroz nju, često i jasnije nego kroz sjajniju boju. Pre postavljanja tapete uvek insistiram na urednom, dobro osušenom gletovanom zidu, jer naknadna popravka ispod već zalepljene tapete gotovo da nije izvodljiva."),
+      h2("Vreme izvođenja i cena"),
+      p("Farbanje je po pravilu brže i jeftinije po kvadratu. Standardno krečenje u dva sloja ide relativno brzo, dok postavljanje tapete zahteva sečenje traka, usklađivanje šare na spojevima i pažljivo lepljenje, što je sporiji, precizniji posao, posebno kod tapeta sa izraženim rapportom (ponavljanjem šare)."),
+      ...bullets([
+        "Farbanje zidova, dva sloja: brže izvođenje, niža cena po kvadratu",
+        "Periva boja za kuhinju ili hodnik: nešto skuplja od standardne, i dalje brža od tapete",
+        "Postavljanje tapete: sporije zbog usklađivanja šare, cena zavisi i od tipa tapete",
+        "Foto-tapeta ili panel: poseban slučaj, obračunava se po segmentu, ne linearno po kvadratu",
+      ]),
+      linkPara(
+        "Tačne cene za oba rešenja, farbanje i tapetiranje, dajem posle besplatnog obilaska, a okvirne brojke možete pogledati i na ",
+        "stranici cenovnika",
+        "/cenovnik",
+        "."
+      ),
+      h2("Uklanjanje i promena mišljenja kasnije"),
+      linkPara(
+        "Farbani zid se lako menja, novi ton ide preko starog uz standardnu pripremu. Tapeta je manje fleksibilna za kasniju promenu: stara tapeta se mora skinuti, ostaci lepka očistiti, a zid ponovo pripremiti pre farbanja ili nove tapete. Ovo je zaseban posao (",
+        "skidanje starih tapeta",
+        "/usluge/tapete",
+        ") koji vredi uzeti u obzir ako planirate da menjate izgled zida svakih nekoliko godina, ne samo jednom."
+      ),
+      h2("Praktičan vodič po prostorijama"),
+      ...bullets([
+        "Kuhinja i kupatilo: periva boja ili vinilna tapeta, zbog vlage i čestog čišćenja",
+        "Dnevni boravak, akcentni zid: tapeta ili dekorativni premaz za teksturu i fokus",
+        "Spavaća soba: mat boja za smirenu atmosferu, ili mirnija tapeta bez agresivne šare",
+        "Dečja soba: periva boja radi lakšeg doterivanja tragova, ili tapeta sa motivom po želji deteta",
+        "Hodnik: periva boja ili vinilna tapeta, oba podnose svakodnevni dodir i prolaz",
+      ]),
+      h2("Koliko brzo je prostorija ponovo upotrebljiva"),
+      p("Ovo je detalj koji klijenti retko pitaju unapred, a često postane bitan kad se radovi već odvijaju. Farbani zid je suv za dodir za nekoliko sati, a nameštaj i slike se mogu vratiti na svoje mesto praktično sledeći dan, čim se drugi sloj dobro osuši. Tapeta zahteva duže strpljenje: lepak ispod nje mora potpuno da se osuši, obično jedan do dva dana u zavisnosti od tipa tapete i vlažnosti u prostoriji, pre nego što se sme vešati slika ili približavati nameštaj uz zid, jer se ivice lakše odvoje dok je lepak još svež."),
+      p("Kod poslova sa kratkim rokom, useljenje za par dana ili prostorija koja mora brzo ponovo u funkciju, ova razlika ume da preteže odluku u korist farbanja, čak i kad bi tapeta inače bila prvi izbor po izgledu."),
+      h2("Kad predlažem kombinaciju"),
+      linkPara(
+        "Često najbolje rešenje nije ili-ili, nego oboje u istom prostoru: jedan zid u tapeti kao akcenat, ostali zidovi u boji koja se uklapa u ton tapete. Ovo smanjuje trošak u odnosu na tapetiranje cele prostorije, a zadržava vizuelni efekat tamo gde je najviše vidljiv. Isti princip radi i sa ",
+        "dekorativnim premazima",
+        "/usluge/krecenje",
+        " umesto tapete, zavisno od budžeta i željenog utiska."
+      ),
+      p("Kad klijent nije siguran šta bira, uvek predlažem da prvo definišemo namenu prostorije i koliko često planiraju da menjaju izgled zida, tek onda pričamo o tonovima i šarama. Ta odluka unapred štedi i vreme i novac na terenu."),
+    ],
+    faq: [
+      { question: "Da li je tapeta skuplja od farbanja?", answer: "Po pravilu da, po kvadratu je tapetiranje sporije i preciznije od farbanja, pa je i cena rada viša. Materijal takođe varira, papirna tapeta je jeftinija, vinilna i netkana su skuplje ali izdržljivije." },
+      { question: "Koja tapeta se može prati?", answer: "Vinilna i netkana (flis) tapeta podnose blago vlažno brisanje. Papirna tapeta nije predviđena za pranje i lako se ošteti od vlage." },
+      { question: "Da li mogu da kombinujem farbu i tapetu u istoj prostoriji?", answer: "Da, ovo je čest izbor. Jedan zid u tapeti kao akcenat, ostali u boji koja se uklapa u ton, smanjuje trošak u odnosu na tapetiranje cele prostorije." },
+      { question: "Da li se tapeta može postaviti preko stare boje?", answer: "Može, ako je zid ravan, čist i dobro prianja boja. Ako je stara boja ljuspava ili zid neravan, potrebna je priprema i eventualno gletovanje pre lepljenja tapete." },
+    ],
+  },
+  {
+    slug: "priprema-fasade-pre-farbanja-sta-proveriti-pre-sezone",
+    title: "Priprema fasade pre farbanja: šta proveriti pre početka sezone",
+    category: "fasada",
+    excerpt:
+      "Pre nego što zakažete farbanje fasade, vredi sami proći par stvari koje najviše utiču na trajnost posla. Evo šta ja proveravam na prvom obilasku i šta možete da pogledate i sami.",
+    summary:
+      "Trajnost farbane fasade zavisi manje od same boje, a više od stanja podloge ispod nje. Pukotine, oljuštena stara boja, začepljeni oluci i vlaga u prizemlju treba da se reše pre farbanja, ne posle, a termin za sezonu (maj-jun, septembar-oktobar) vredi zakazati nedeljama unapred.",
+    keyTakeaways: [
+      "Pukotine u žbuci treba sanirati pre farbanja, boja sama ne rešava uzrok",
+      "Oljuštenu ili labavu staru boju treba ukloniti pre novog sloja, ne farbati preko nje",
+      "Začepljeni oluci i loše zaptivena okna oko prozora prljaju i skidaju svežu fasadu brže od sunca",
+      "Termin za maj-jun i septembar-oktobar vredi zakazati nedeljama unapred, sezona je kratka",
+    ],
+    publishedAt: "2026-08-11",
+    body: [
+      p("Dosta poziva koje dobijam pred sezonu fasadnih radova počinje istom rečenicom: „hoću da farbam fasadu, kad možete“. Datum i vreme su svakako bitni, ali pre nego što uopšte pričamo o terminu, uvek predlažem kratak pregled same fasade, jer trajnost novog sloja boje zavisi mnogo više od onoga što je ispod nje nego od same boje koju izaberete."),
+      h2("Zašto priprema određuje koliko će fasada trajati"),
+      p("Farbanje preko neproverene, oštećene podloge je najčešći razlog zašto fasada „brzo“ izgubi izgled, ljušti se ili puca posle samo jedne, dve sezone. Boja nije popravni materijal, ona prekriva ono što je ispod, dobro ili loše. Ako se pukotina ili loše prianjajući stari sloj samo prefarbaju, problem ne nestaje, samo postaje manje vidljiv dok se ne pojavi ponovo, obično brže nego što bi klijent očekivao."),
+      h2("Pukotine u žbuci"),
+      p("Sitne, vlasaste pukotine su uobičajene i uglavnom bezopasne ako se saniraju pre farbanja, obično elastičnom masom koja prati pomeranje podloge. Šire pukotine, posebno one koje se pružaju dijagonalno od uglova prozora ili vrata, mogu ukazivati na sleganje objekta ili strukturni problem, i tu je pre farbanja potrebna procena, ponekad i drugog stručnjaka, ne samo kozmetička sanacija."),
+      p("Ono što uvek savetujem klijentima je da sami prošetaju oko objekta i pogledaju fasadu izbliza, posebno oko prozorskih okvira, uglova i na spoju sa temeljom, jer se tu pukotine najčešće prvo pojave."),
+      h2("Oljuštena i labava stara boja"),
+      p("Test koji radim na terenu je jednostavan: pritisnem dlan ili nokat na nekoliko mesta fasade i proverim da li se stari sloj krunio ili ljuspa. Ako se boja lako skida u komadićima, farbanje preko nje samo odlaže problem, jer se novi sloj lepi za labavu podlogu, ne za zid. Takva mesta treba mehanički očistiti pre nanošenja novog premaza, što je i osnova onoga što radim kroz pripremu fasade pre bojenja."),
+      h2("Vlaga u prizemlju i kapilarna vlaga"),
+      linkPara(
+        "Tamne mrlje pri dnu fasade, blizu zemlje, često nisu obična prljavština nego znak kapilarne vlage koja se penje kroz temelj. Farbanje preko takvog mesta standardnom fasadnom bojom ne rešava ništa, vlaga i dalje probija i uništava novi sloj iznutra. Ovakve zone zahtevaju poseban tretman, sličan onome koji radim za ",
+        "unutrašnju sanaciju vlage",
+        "/usluge/vlaga",
+        ", pre nego što ima smisla farbati taj deo fasade."
+      ),
+      h2("Oluci, olučne cevi i završni detalji"),
+      p("Ovo je stavka koju ljudi najčešće preskoče, a direktno utiče na to koliko će fasada ostati čista posle farbanja. Začepljen oluk prelije se preko ivice i ostavlja tamnu, vertikalnu mrlju niz svež zid, često već posle prve jače kiše. Isto važi za loše zaptivena okna oko prozora, odakle voda curi niz fasadu umesto da ide predviđenim putem. Pre zakazivanja farbanja vredi proveriti da li oluci slobodno propuštaju vodu i da li su spojevi cevi zategnuti."),
+      h2("Termo-fasada i planirana dogradnja"),
+      linkPara(
+        "Ako planirate da uz farbanje uradite i termo-izolaciju, redosled je bitan: izolacija i završna dekorativna žbuka moraju biti gotovi pre nego što ima smisla govoriti o klasičnom farbanju te površine, jer se preko termo-fasade ne farba na isti način kao preko obične žbuke. Ovo je čest razlog kašnjenja kad se planira u poslednji čas, pa vredi rano razgraničiti da li je u pitanju samo farbanje postojeće fasade ili kompletni ",
+        "fasadni radovi",
+        "/usluge/fasadni-radovi",
+        " sa izolacijom."
+      ),
+      h2("Probni premaz na neupadljivom delu zida"),
+      p("Kod većih ili starijih fasada, pre nego što naručim celu količinu boje, nanosim probni premaz na manju, neupadljivu površinu, obično na bočnom ili zadnjem delu objekta. Ovo služi dvema stvarima: proveri se kako nova boja stvarno prianja na postojeću podlogu, i klijent vidi tačan ton na svojoj fasadi, pod stvarnim svetlom, ne na kartici u prodavnici. Fasadne boje često izgledaju drugačije na velikoj površini i pod direktnim suncem nego na maloj kartici boje u zatvorenom prostoru."),
+      p("Ako probni premaz pokaže slabo prianjanje, mehuriće ili neujednačeno upijanje, to je znak da priprema podloge nije završena kako treba, i bolje je to otkriti na maloj površini nego posle farbanja cele fasade."),
+      h2("Praktična check-lista pre poziva molera"),
+      ...bullets([
+        "Prošetajte oko objekta i pogledajte fasadu izbliza, posebno oko otvora i pri dnu zida",
+        "Pritisnite dlanom nekoliko mesta da proverite da li se stara boja ljuspa ili kruni",
+        "Proverite da li ima tamnih, vertikalnih mrlja ispod oluka ili prozorskih okvira",
+        "Pogledajte da li postoje tamne mrlje pri dnu fasade blizu zemlje, mogući znak kapilarne vlage",
+        "Slikajte fasadu sa sve četiri strane, to ubrzava prvu procenu pre samog obilaska",
+      ]),
+      h2("Kad zakazati termin"),
+      p("Sezona za fasadne radove u Nišu je realno ograničena na nekoliko meseci godišnje, maj i jun, pa septembar i prva polovina oktobra, kada su temperatura i vlažnost najstabilniji. Kako se ovaj period ponavlja svake godine, a potražnja je najveća upravo tada, termin vredi zakazati nedeljama unapred, ne u poslednjem trenutku kad se vreme već promeni. Ovo posebno važi ako je potrebna skela ili veći obim pripreme, jer priprema i skela oduzimaju dodatne dane pre nego što se uopšte krene sa bojenjem."),
+      p("Kratak pregled fasade pre poziva ne mora biti stručan da bi bio koristan, dovoljno je da znate šta da tražite. Sve ostalo, procenu ozbiljnosti pukotine ili izvor vlage, rešavamo zajedno na besplatnom obilasku pre nego što damo konačnu ponudu."),
+    ],
+    faq: [
+      { question: "Da li mogu sam da proverim da li fasada ima kapilarnu vlagu?", answer: "Delimično. Tamne mrlje pri dnu fasade blizu zemlje su čest znak, ali tačan uzrok i obim problema najbolje se utvrđuju na licu mesta, jer izgled mrlje sam po sebi nije dovoljan za sigurnu dijagnozu." },
+      { question: "Šta ako primetim pukotine na fasadi pre farbanja?", answer: "Sitne, vlasaste pukotine se sanirati standardno pre farbanja. Šire ili dijagonalne pukotine oko otvora vredi prvo proceniti, jer mogu ukazivati na ozbiljniji problem sa objektom." },
+      { question: "Koliko unapred treba zakazati fasadne radove?", answer: "U vrhuncu sezone, maj i jun, najbolje je zakazati nekoliko nedelja unapred, jer je tada najveća potražnja i termini se brzo popune." },
+      { question: "Da li skela poskupljuje farbanje fasade?", answer: "Da, skela se obračunava zasebno po kvadratu fasadne površine i uključuje montažu i demontažu, ali je neophodna za bezbedan i kvalitetan rad na spratovima." },
     ],
   },
 ];
