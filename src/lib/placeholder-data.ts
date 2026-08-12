@@ -1180,6 +1180,7 @@ export const blogPosts: BlogPostItem[] = [
 export type ServicePageItem = {
   slug: string;
   title: string;
+  heroTitle?: string;
   heroSubtitle: string;
   body: unknown[];
   checklist: { title: string; description: string }[];
@@ -1195,19 +1196,20 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "krecenje",
     title: "Krečenje",
+    heroTitle: "Krečenje stanova i kuća u Nišu",
     heroSubtitle:
-      "Krečenje stanova, kuća i pojedinačnih soba u Nišu, po broju slojeva i tipu boje, sa fiksnom cenom posle besplatnog obilaska.",
+      "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini, po broju slojeva i tipu boje, sa fiksnom cenom posle besplatnog obilaska.",
     seo: {
-      title: "Krečenje stanova, kuća i soba u Nišu | cene",
+      title: "Krečenje stanova i kuća u Nišu | majstor za krečenje, cene",
       description:
-        "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini. Fiksna cena posle besplatnog obilaska, uredno i na vreme.",
+        "Krečenje stanova, kuća i pojedinačnih soba u Nišu i okolini. Fiksna cena posle besplatnog obilaska, uredno i na vreme. Pozovite 062 133 83 83.",
     },
     body: [
       h2("Krečenje nije jedna usluga, nego nekoliko različitih izbora"),
       p("Kad kažemo „krečenje”, u praksi to pokriva nekoliko različitih poslova, koji se razlikuju po broju slojeva, tipu boje i nameni prostorije. Cena i vreme rada zavise upravo od tih izbora, ne samo od kvadrature zida, zato uvek prvo razgovaram sa klijentom o nameni prostorije pre nego što damo konačnu ponudu."),
       p("U nastavku objašnjavam kako se ti izbori odražavaju na cenu i tok radova, od toga da li krečite jednu sobu ili ceo stan, do toga kakvu boju birate za pojedine prostorije. Cilj mi je da klijent unapred zna šta ulazi u ponudu, bez sitnih iznenađenja kad radovi već krenu."),
-      h2("Krečenje stanova, kuća i pojedinačnih soba"),
-      p("Krečenje stana u zgradi i krečenje kuće nisu isti posao, iako zvuče slično. Kod stana obično radim prostoriju po prostoriju, uz zaštitu zajedničkih delova zgrade (stepenište, lift) ako se materijal unosi kroz njih. Kod kuće, pogotovo starije gradnje, češće nailazim na neravnije zidove i stariji malter koji zahteva više pripreme pre nego što se pređe na farbanje. Krečenje jedne sobe, na primer dečje sobe ili spavaće sobe u sklopu većeg stana, radim i kao samostalan posao, bez obaveze da se zahvata ceo stan ili kuća."),
+      h2("Krečenje stanova, kuća i pojedinačnih soba u Nišu"),
+      p("Krečenje stana u zgradi i krečenje kuće nisu isti posao, iako zvuče slično. Kod stanova na Bulevaru Nemanjića, Duvaništu ili u centru Niša obično radim prostoriju po prostoriju, uz zaštitu zajedničkih delova zgrade (stepenište, lift) ako se materijal unosi kroz njih. Kod kuća na Paliluli, Medijani ili u okolini Niša češće nailazim na neravnije zidove i stariji malter koji zahteva više pripreme pre nego što se pređe na farbanje. Krečenje jedne sobe, na primer dečje sobe ili spavaće sobe u sklopu većeg stana, radim i kao samostalan posao, bez obaveze da se zahvata ceo stan ili kuća."),
       p("Kod stanova u zgradama sa liftom bez zaštitne folije, unošenje materijala i merdevina zna da potraje duže nego sam rad u sobi, pa to unapred računam u termin. Kod kuća često nailazim i na dodatne izazove, vlagu u prizemnim prostorijama ili tragove ranijih intervencija koje treba prvo sanirati, o čemu klijenta obaveštavam pre nego što damo konačnu cenu."),
       h2("Broj slojeva menja i cenu i rezultat"),
       p("Jedan sloj boje je opcija samo kad se ne menja ton, na primer kad se osvežava zid istom bojom kojom je već farban. Kod svake promene tona, standardno radim dva sloja, jer jedan sloj retko postiže ujednačenu pokrivnost, ostaju vidljive senke starije boje ispod novog premaza."),
@@ -1255,19 +1257,20 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "gletovanje",
     title: "Gletovanje",
+    heroTitle: "Gletovanje zidova i plafona u Nišu",
     heroSubtitle:
-      "Gletovanje stanova i kuća u Nišu, bandažiranje spojeva i brušenje do glatke površine, priprema koja određuje krajnji izgled krečenja.",
+      "Gletovanje stanova i kuća u Nišu i okolini, bandažiranje spojeva i brušenje do glatke površine, priprema koja određuje krajnji izgled krečenja.",
     seo: {
-      title: "Gletovanje stanova i kuća u Nišu | cene",
+      title: "Gletovanje zidova i plafona u Nišu | cene po m²",
       description:
-        "Gletovanje stanova i kuća u Nišu i okolini, zidovi i plafoni. Dva tanka sloja sa brušenjem, fiksna cena posle besplatnog obilaska.",
+        "Gletovanje stanova i kuća u Nišu i okolini. Dva tanka sloja sa brušenjem, bandažiranje spojeva, fiksna cena posle besplatnog obilaska.",
     },
     body: [
       h2("Zašto gletovanje tretiram kao zaseban posao, ne kao dodatak"),
       p("Gletovanje se često posmatra kao usputni korak pre farbanja, ali u praksi je to posao za sebe, sa svojom tehnikom, redosledom i vremenom sušenja koje se ne može ubrzati. Loše ili preskočeno gletovanje je najčešći razlog da farbanje, iako uredno urađeno, na kraju ne izgleda profesionalno."),
       p("Zato gletovanje uvek posebno navodim u ponudi, čak i kad klijent traži samo „krečenje”, jer bez ove pripreme rezultat zavisi mnogo više od sreće nego od veštine. U nastavku objašnjavam šta gletovanje tačno uključuje i zašto vreme sušenja nije nešto što se može ubrzati bez posledica."),
-      h2("Gletovanje stanova i gletovanje kuća"),
-      p("Kod gletovanja stana u zgradi, najčešće se radi o već malterisanim, ravnijim zidovima, gde je posao uglavnom u tankim slojevima i finom brušenju. Gletovanje kuće, posebno starije, ume da zahteva više pripreme, sanaciju pukotina i ponekad grublji prvi sloj pre standardnog postupka, jer je podloga često neravnija i sa tragovima prethodnih radova. U oba slučaja prvo pogledam prostor uživo, jer se obim posla vidi tek na licu mesta."),
+      h2("Gletovanje stanova i kuća u Nišu"),
+      p("Kod gletovanja stana u zgradi u Nišu, najčešće se radi o već malterisanim, ravnijim zidovima, gde je posao uglavnom u tankim slojevima i finom brušenju. Gletovanje kuće, posebno starije gradnje kakve se često sreću na Paliluli ili u okolini Niša, ume da zahteva više pripreme, sanaciju pukotina i ponekad grublji prvi sloj pre standardnog postupka, jer je podloga često neravnija i sa tragovima prethodnih radova. U oba slučaja prvo pogledam prostor uživo, jer se obim posla vidi tek na licu mesta."),
       p("Kod novogradnje, gletovanje ide brže jer je zid ravan od početka, ali zahteva dovoljno vremena da se malter potpuno slegne pre nego što se pređe na finu obradu. Kod starijih kuća, gde su zidovi često rađeni u više navrata i različitim tehnikama, prvi sloj glet mase ume da otkrije neravnine koje se do tada nisu videle."),
       h2("Šta gletovanje zapravo radi"),
       p("Glet masa je fina, gusta smesa koja se nanosi tankim slojem preko zida ili plafona da bi izravnala celu površinu, uključujući sitne neravnine koje se golim okom jedva primete na sirovom zidu, ali postanu vidljive čim se nanese boja, pogotovo pod bočnim osvetljenjem."),
@@ -1312,15 +1315,21 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "fasadni-radovi",
     title: "Fasadni radovi",
+    heroTitle: "Farbanje i priprema fasade u Nišu",
     heroSubtitle:
-      "Priprema, hidrofobizacija i farbanje fasada, uključujući završne slojeve termo-fasade, prilagođeno vremenskim uslovima.",
+      "Priprema, hidrofobizacija i farbanje fasada u Nišu i okolini, uključujući završne slojeve termo-fasade, prilagođeno vremenskim uslovima.",
+    seo: {
+      title: "Farbanje fasade u Nišu | fasadni radovi, cene po m²",
+      description:
+        "Farbanje fasade, hidrofobizacija i termo-fasada u Nišu i okolini. Priprema, sanacija pukotina i dva sloja fasadne boje. Pozovite za besplatnu procenu.",
+    },
     body: [
       h2("Zašto je fasada zahtevniji posao od unutrašnjeg farbanja"),
       p("Fasadni radovi izloženi su suncu, kiši, mrazu i promenama temperature na način na koji unutrašnji zidovi nikad nisu, pa materijal i tehnika moraju biti prilagođeni tim uslovima. Dobra fasada ne štiti samo izgled zgrade, nego i sam zid od prodora vlage, što direktno utiče na toplotnu izolaciju i trajnost objekta."),
       p("Zato fasadni radovi zahtevaju drugačije planiranje od unutrašnjih, počev od vremenske prognoze, preko izbora odgovarajućeg premaza, do organizacije skele za veće objekte."),
       h2("Priprema fasade pre farbanja"),
       p("Stara fasada se prvo pregleda za pukotine, oljuštene delove i mesta gde je prethodni sloj izgubio prijanjanje. Svi labavi delovi se mehanički uklanjaju, pukotine se saniraju odgovarajućom masom, a površina se pere od prljavštine i eventualnih algi ili mahovine pre nanošenja bilo kakvog premaza."),
-      p("Kod starijih fasada posebno pazim na mesta oko oluka i prozorskih klupica, gde vlaga najduže zadržava i gde stari premaz najčešće prvi popusti. Ako je fasada prethodno bojena više puta, ponekad je potrebno i grubo skidanje starih, ljuspavih slojeva pre nego što nova boja uopšte može dobro da prione."),
+      p("Kod starijih fasada u Nišu posebno pazim na mesta oko oluka i prozorskih klupica, gde vlaga najduže zadržava i gde stari premaz najčešće prvi popusti. Ako je fasada prethodno bojena više puta, ponekad je potrebno i grubo skidanje starih, ljuspavih slojeva pre nego što nova boja uopšte može dobro da prione."),
       h2("Hidrofobizacija: nevidljiva zaštita koja pravi razliku"),
       p("Hidrofobni premaz je proziran ili gotovo neprimetan sloj koji se nanosi pre ili posle bojenja (u zavisnosti od proizvoda) i koji sprečava upijanje vode u zid, dok istovremeno dozvoljava zidu da „diše”, odnosno da propušta vodenu paru iznutra. Ovo značajno produžava vek trajanja fasadne boje i smanjuje rizik od pucanja usled smrzavanja vode unutar zida tokom zime."),
       p("Iako se ne vidi golim okom nakon nanošenja, razlika se oseti već posle prve jače kiše, voda jednostavno ne prodire u zid nego klizi niz površinu. Ovaj korak posebno preporučujem kod fasada okrenutih ka severu ili zapadu, koje su duže izložene vlazi i kiši."),
@@ -1334,7 +1343,7 @@ export const servicePages: ServicePageItem[] = [
       p("Istaknuti fasadni elementi, venci, nastrešnice i ivice oko prozora, farbaju se posebno jer su izloženiji vremenskim uticajima od ravne fasadne površine i češće zahtevaju ranije održavanje. Ove elemente uvek procenjujem zasebno u ponudi, obračunato po dužnom metru."),
       p("Zbog direktne izloženosti kiši i suncu, ovi elementi obično prvi pokazuju znake habanja, ljuspanje ili promenu tona, čak i kad je ostatak fasade još uvek u dobrom stanju. Zato ih, kad je moguće, preporučujem kao deo redovnog održavanja, a ne tek kad postanu upadljivo oštećeni."),
       h2("Kad se fasada radi, a kad se čeka"),
-      p("Fasadno farbanje zavisi od vremenskih uslova više nego bilo koji drugi deo posla. Detaljno sam pisao o ovome na blogu, ali kratko: idealno je između aprila i oktobra, uz temperature između 10 i 25 stepeni i bez najavljene kiše u naredna dva dana."),
+      p("Fasadno farbanje zavisi od vremenskih uslova više nego bilo koji drugi deo posla. Detaljno sam pisao o ovome na blogu, ali kratko: u Nišu, gde leta znaju da budu izuzetno topla, idealan period za fasadu je od aprila do juna i od septembra do oktobra, uz temperature između 10 i 25 stepeni i bez najavljene kiše u naredna dva dana."),
       p("Van ovog perioda, ili u danima sa naglim promenama temperature, radije pomerim termin nego da rizikujem da premaz ne veže kako treba. Ova strpljivost se isplati, jer loše osušen sloj fasadne boje puca i ljušti se mnogo brže nego onaj koji je dobio dovoljno vremena i pravu temperaturu za sušenje."),
     ],
     checklist: [
@@ -1367,8 +1376,14 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "dekorativni-premazi",
     title: "Dekorativni premazi",
+    heroTitle: "Dekorativni premazi i tehnike u Nišu",
     heroSubtitle:
-      "Marmorino, venecijanski premaz, stencil art, sahara, travertino i concrete tehnike, sa probnim uzorkom pre nego što se obavežete na ceo zid.",
+      "Marmorino, venecijanski premaz, stencil art, sahara, travertino i concrete tehnike u Nišu, sa probnim uzorkom pre nego što se obavežete na ceo zid.",
+    seo: {
+      title: "Dekorativni premazi u Nišu | marmorino, venecijanski, concrete",
+      description:
+        "Dekorativni premazi u Nišu: marmorino, venecijanski premaz, stencil art, sahara, travertino i concrete. Probni uzorak pre početka, fiksna cena.",
+    },
     body: [
       h2("Kad ima smisla razmišljati o dekorativnom premazu"),
       p("Dekorativni premazi su izbor za one koji žele nešto više od jednobojnog zida, akcentni zid u dnevnom boravku, teksturu u hodniku, ili celu prostoriju obrađenu ručnom tehnikom po ukusu. Ovo je posao koji zahteva drugačiju veštinu od standardnog farbanja, jer se svaka tehnika izvodi ručno i rezultat direktno zavisi od iskustva izvođača."),
@@ -1422,14 +1437,20 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "tapete",
     title: "Tapete",
+    heroTitle: "Postavljanje i lepljenje tapeta u Nišu",
     heroSubtitle:
-      "Postavljanje papirnih, vinilnih i netkanih tapeta, uz precizno usklađivanje šare i uredno skidanje starih slojeva.",
+      "Postavljanje papirnih, vinilnih i netkanih tapeta u Nišu i okolini, uz precizno usklađivanje šare i uredno skidanje starih slojeva.",
+    seo: {
+      title: "Postavljanje tapeta u Nišu | lepljenje tapeta, cene",
+      description:
+        "Postavljanje i lepljenje tapeta u Nišu i okolini. Papirne, vinilne i netkane tapete, foto-tapete i paneli. Fiksna cena posle obilaska.",
+    },
     body: [
       h2("Kad tapeta ima smisla umesto farbanja"),
       p("Tapeta je izbor za one koji žele izraženiju teksturu ili šaru nego što jednobojni zid može da ponudi, bez cene i vremena koje zahteva ručna dekorativna tehnika. Dobro postavljena tapeta ume da promeni karakter cele prostorije, ali kvalitet rezultata zavisi mnogo više od pripreme zida nego što ljudi očekuju."),
       p("U nastavku prolazim kroz tipove tapeta koje najčešće postavljam, korake pripreme koji određuju krajnji izgled, i situacije gde savetujem foto-tapetu ili panel umesto klasične role sa šarom."),
-      h2("Priprema zida je najvažniji korak"),
-      p("Zid mora biti potpuno ravan i suv pre lepljenja tapete, svaka neravnina ili vlažno mesto kasnije se vidi kroz tapetu ili uzrokuje da se ivice odlepe. Kod novih zidova radim standardnu pripremu i bandažiranje, kod starijih proveravam da nema tragova vlage pre nego što uopšte razmišljam o tapeti."),
+      h2("Priprema zida pre postavljanja tapete"),
+      p("Zid mora biti potpuno ravan i suv pre lepljenja tapete, svaka neravnina ili vlažno mesto kasnije se vidi kroz tapetu ili uzrokuje da se ivice odlepe. Kod novih zidova u Nišu radim standardnu pripremu i bandažiranje, kod starijih proveravam da nema tragova vlage pre nego što uopšte razmišljam o tapeti."),
       p("Ako na zidu postoje tragovi ranije vlage, ma koliko mali, ne preporučujem lepljenje tapete pre nego što se uzrok reši, jer tapeta zarobljava vlagu ispod sebe i problem se pogorša umesto da nestane. Ovo je razgovor koji vodim iskreno sa klijentom pre nego što damo ponudu za tapetu."),
       h2("Vrste tapeta koje postavljam"),
       p("Radim sa papirnim, vinilnim i netkanim tekstilnim tapetama, svaka od njih ima nešto drugačiji postupak lepljenja i vreme sušenja. Papirna tapeta je najosetljivija na vlagu tokom lepljenja, vinilna je izdržljivija i lakša za čišćenje, a netkana tekstilna tapeta se najčešće lepi tako što se lepak nanosi na zid, a ne na samu tapetu, što olakšava usklađivanje šare."),
@@ -1474,11 +1495,17 @@ export const servicePages: ServicePageItem[] = [
   {
     slug: "vlaga",
     title: "Vlaga",
+    heroTitle: "Sanacija vlage na zidovima u Nišu",
     heroSubtitle:
-      "Sanacija vlažnih mrlja, tretman protiv buđi i kapilarne vlage, uvek sa pravim redosledom, prvo uzrok, tek onda estetika.",
+      "Sanacija vlažnih mrlja, tretman protiv buđi i kapilarne vlage u Nišu, uvek sa pravim redosledom, prvo uzrok, tek onda estetika.",
+    seo: {
+      title: "Sanacija vlage u Nišu | tretman buđi, kapilarna vlaga",
+      description:
+        "Sanacija vlage na zidovima u Nišu i okolini. Tretman protiv buđi, izolacioni premaz, kapilarna vlaga u prizemnim prostorijama. Pozovite za procenu.",
+    },
     body: [
       h2("Zašto vlaga zahteva drugačiji pristup od standardnog farbanja"),
-      p("Sanacija vlage se razlikuje od standardnog farbanja po tome što prvo mora da se reši uzrok problema, pre nego što se pređe na uobičajen postupak gletovanja i farbanja. Ovo je posao koji zahteva strpljenje i pravilan redosled, jer preskakanje koraka gotovo uvek dovede do toga da se problem vrati za nekoliko meseci."),
+      p("Sanacija vlage se razlikuje od standardnog farbanja po tome što prvo mora da se reši uzrok problema, pre nego što se pređe na uobičajen postupak gletovanja i farbanja. U Nišu, gde su mnoge zgrade iz 70-ih i 80-ih, ovo je čest problem, posebno u prizemnim stanovima i kućama. Posao zahteva strpljenje i pravilan redosled, jer preskakanje koraka gotovo uvek dovede do toga da se problem vrati za nekoliko meseci."),
       p("U nastavku objašnjavam kako pristupam trima najčešćim situacijama, vlažnoj mrlji, buđi i kapilarnoj vlazi, jer svaka od njih ima drugačiji uzrok i drugačiji redosled sanacije, iako spolja mogu izgledati slično."),
       h2("Sanacija vlažnih mrlja"),
       p("Vlažne mrlje na plafonu ili zidu prvo zahtevaju potvrdu da je izvor curenja otklonjen. Tek nakon što se zid osuši, nanosi se izolacioni premaz koji sprečava da ostatak mrlje probije kroz nove slojeve, a zatim standardno gletovanje i farbanje sanirane površine."),
@@ -1486,8 +1513,8 @@ export const servicePages: ServicePageItem[] = [
       h2("Tretman protiv buđi i gljivica"),
       p("Buđ se prvo mehanički uklanja sa zaražene površine, uz odgovarajuću zaštitu (masku i rukavice) zbog spora koje se oslobađaju tokom čišćenja. Nakon toga se nanosi antifungalni (biocidni) premaz, koji sprečava ponovni razvoj gljivica ispod novih slojeva boje. Ovaj korak je posebno čest u kupatilima bez adekvatne ventilacije i u prostorijama sa hroničnom vlagom."),
       p("Važna napomena: tretman protiv buđi rešava simptom na površini, ali ako je uzrok hronična vlaga (loša ventilacija, kondenzacija), preporučujem i savetujem trajno rešenje problema (ventilator, redovno provetravanje), inače se buđ vremenom vraća bez obzira na kvalitet premaza."),
-      h2("Kapilarna vlaga u prizemlju"),
-      p("Kapilarna vlaga je poseban slučaj, javlja se kod prizemnih prostorija kad vlaga iz temelja prodire kroz zid naviše, često prepoznatljiva po beličastim naslagama soli i ljuštenju maltera pri dnu zida. Ovaj tip vlage se ne rešava standardnim izolacionim premazom, nego kombinacijom sanacionog maltera i specijalizovanih premaza prilagođenih baš kapilarnom prodoru, i skoro uvek zahteva obilazak pre davanja konačne procene."),
+      h2("Kapilarna vlaga u prizemnim prostorijama"),
+      p("Kapilarna vlaga je poseban slučaj, čest u starijim kućama i prizemnim stanovima u Nišu, gde se javlja kod prizemnih prostorija kad vlaga iz temelja prodire kroz zid naviše, često prepoznatljiva po beličastim naslagama soli i ljuštenju maltera pri dnu zida. Ovaj tip vlage se ne rešava standardnim izolacionim premazom, nego kombinacijom sanacionog maltera i specijalizovanih premaza prilagođenih baš kapilarnom prodoru, i skoro uvek zahteva obilazak pre davanja konačne procene."),
       p("Sanacioni malter je propustljiv za vodenu paru, ali blokira transport soli ka površini, što je ključna razlika u odnosu na običan malter koji bi so ponovo izbacio kroz koji mesec. Ovaj deo posla traje duže od standardnog gletovanja, jer sanacioni sistem zahteva više slojeva sa vremenom sušenja između svakog."),
       h2("Zaštita nameštaja tokom sanacije"),
       p("Kod sanacije vlage, zaštita postojećeg nameštaja i podova je posebno važna jer se često radi u više faza i duže traje nego standardno farbanje. Sav nameštaj koji ostaje u prostoriji se pažljivo prekriva folijom, a podovi kartonom i zaštitnom trakom na ivicama."),
