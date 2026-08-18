@@ -16,7 +16,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: "/kontakt" },
-    openGraph: { title: ogTitle, description, type: "website", url: `${SITE_URL}/kontakt` },
+    openGraph: {
+      images: [`${SITE_URL}/opengraph-image`], title: ogTitle, description, type: "website", url: `${SITE_URL}/kontakt` },
   };
 }
 
