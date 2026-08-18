@@ -1191,6 +1191,7 @@ export const blogPosts: BlogPostItem[] = [
       "Prvo krečenje u novom stanu je razumno planirati kao privremeno, a ozbiljno posle prve zime",
     ],
     publishedAt: "2026-08-17",
+    coverImageUrl: "/images/blog/krecenje-novogradnje-zasto-prvo-krecenje-pukne.webp",
     body: [
       p("Poziv koji dobijam svake godine u februaru i martu zvuči otprilike isto. Klijent je uselio u nov stan, okrečio ga pre useljenja, i sada, posle prve zime, vidi tanke pukotine na spoju zida i plafona ili iznad vrata. Prvo pitanje je uvek da li je nešto loše odrađeno."),
       p("U velikom broju slučajeva nije. Novogradnja u prvim godinama radi, i to je proces koji se pripremom može ublažiti ali ne i zaustaviti. Pošteno je da se to kaže unapred, pre nego što se plati posao, a ne posle prve zime. U ovom tekstu je zato objašnjeno šta se tačno dešava, šta se dobrom pripremom može sprečiti, i kada je najbolje planirati ozbiljno krečenje u novom stanu."),
@@ -1262,6 +1263,7 @@ export const blogPosts: BlogPostItem[] = [
       "Kupatilo i kuhinja ostaju upotrebljivi gotovo sve vreme, jer se rade zadnji i najkraće traju",
     ],
     publishedAt: "2026-08-18",
+    coverImageUrl: "/images/blog/zivot-u-stanu-tokom-krecenja.webp",
     body: [
       p("Kada me neko pozove za krečenje celog stana, cena je obično drugo pitanje. Prvo je gotovo uvek varijacija na temu: da li mogu da ostanem u stanu dok se radi, i gde ću spavati tih dana. To je razumna briga, jer ne postoji svima opcija da se isele kod rodbine na nedelju dana, i za mnoge ljude je upravo ta nepoznanica razlog da se krečenje odlaže godinama."),
       p("Odgovor je da se u ogromnom broju slučajeva može ostati u stanu, ali samo ako se posao planira kako treba. Razlika je u tome da li se stan radi po prostorijama ili sve odjednom, i taj plan se pravi na početku, pre prvog dana."),
