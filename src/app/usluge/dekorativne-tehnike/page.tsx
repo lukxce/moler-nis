@@ -42,8 +42,8 @@ const techniques = [
     title: "Stencil art",
     description:
       "Šablonska tehnika gde se preko obrađenog zida nanosi geometrijski uzorak ili motiv u jednoj ili više boja. Popularan izbor za akcentni zid, dečju sobu ili prostor koji traži vizuelni fokus bez potpunog presvlačenja.",
-    href: "/usluge/dekorativni-premazi",
-    label: "Sve o dekorativnim premazima",
+    href: "/usluge/stencil-art",
+    label: "Više o stencil art tehnici",
   },
   {
     title: "Sahara efekat",
