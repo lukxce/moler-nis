@@ -13,7 +13,7 @@ const PATH = "/usluge/sahara-premaz";
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   const title = "Sahara premaz Niš - peskovita tekstura za zidove";
-  const description = `Sahara premaz u ${settings.city}u: topla, peskovita tekstura sa efektom pustinjskog peska. Nanosi se špahtlom u tankom sloju, probni uzorak pre celog zida. Pozovite ${settings.phone}.`;
+  const description = `Sahara premaz u ${settings.city}u: topla, peskovita tekstura sa efektom pustinjskog peska. Nanosi se špahtlom u tankom sloju. Pozovite ${settings.phone}.`;
 
   return {
     title,

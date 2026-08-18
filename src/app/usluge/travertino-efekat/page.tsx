@@ -13,7 +13,7 @@ const PATH = "/usluge/travertino-efekat";
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   const title = "Travertino premaz Niš - dekorativna tehnika sa efektom kamena";
-  const description = `Travertino premaz u ${settings.city}u: imitacija prirodnog travertino kamena sa karakterističnim porama i slojevitom teksturom. Probni uzorak pre celog zida. Pozovite ${settings.phone}.`;
+  const description = `Travertino premaz u ${settings.city}u: imitacija travertino kamena sa porama i slojevitom teksturom. Probni uzorak pre zida. Pozovite ${settings.phone}.`;
 
   return {
     title,

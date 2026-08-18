@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   const title = "Kontakt";
   const ogTitle = `Kontakt | ${settings.title}`;
-  const description = `Pozovite ${settings.phone} ili nas posetite u ${settings.address ?? settings.city}. Radno vreme: ${settings.workingHours ?? ""}.`;
+  const description = `Pozovite ${settings.phone} ili nas posetite u ${settings.address ?? settings.city}. Radno vreme: ${settings.workingHours ?? ""}. Javljamo se isti dan i dogovaramo besplatan obilazak.`;
 
   return {
     title,

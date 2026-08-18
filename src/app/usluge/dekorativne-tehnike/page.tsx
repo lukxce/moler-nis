@@ -12,7 +12,7 @@ const PATH = "/usluge/dekorativne-tehnike";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Dekorativne tehnike za zidove u Nišu - marmorino, venecijanski, concrete";
+  const title = "Dekorativne tehnike za zidove u Nišu | premazi i efekti";
   const description = `Dekorativni premazi u ${settings.city}u: marmorino, venecijanski premaz, stencil art, sahara, travertino i concrete efekat. Probni uzorak pre celog zida. ${settings.phone}.`;
 
   return {

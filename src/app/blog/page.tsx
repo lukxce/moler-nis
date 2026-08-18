@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = settings.seoBlog?.title ?? `Blog o molerskim radovima | ${settings.city}`;
   const description =
     settings.seoBlog?.description ??
-    `Korisni tekstovi o pripremi, farbanju, fasadi i sanaciji u ${settings.city}u.`;
+    `Korisni tekstovi o pripremi zidova, gletovanju, farbanju, izboru boje i dekorativnim tehnikama u ${settings.city}u, iz svakodnevnog molerskog posla.`;
 
   return {
     title,
