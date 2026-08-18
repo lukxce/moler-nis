@@ -8,8 +8,7 @@ import { SITE_URL } from "@/lib/site-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Kontakt";
-  const ogTitle = `Kontakt | ${settings.title}`;
+  const title = `Kontakt i zakazivanje termina u ${settings.city}u`;
   const description = `Pozovite ${settings.phone} ili nas posetite u ${settings.address ?? settings.city}. Radno vreme: ${settings.workingHours ?? ""}. Javljamo se isti dan i dogovaramo besplatan obilazak.`;
 
   return {
@@ -17,7 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     alternates: { canonical: "/kontakt" },
     openGraph: {
-      images: [`${SITE_URL}/opengraph-image`], title: ogTitle, description, type: "website", url: `${SITE_URL}/kontakt` },
+      images: [`${SITE_URL}/opengraph-image`],
+      title,
+      description,
+      type: "website",
+      url: `${SITE_URL}/kontakt`,
+    },
   };
 }
 
