@@ -75,7 +75,7 @@ export default async function SaharaPremazPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Sahara dekorativni premaz",
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     description: "Dekorativna tehnika sa peskovitom, zemljanom teksturom u toplim tonovima, nanosi se špahtlom u tankom sloju sa karakterističnim zrnatim efektom.",
   };

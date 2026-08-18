@@ -80,7 +80,7 @@ export default async function StencilArtPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Stencil art, šablon dizajn na zidu",
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     description: "Dekorativna tehnika u kojoj se preko okrečenog zida šablonom nanosi geometrijski uzorak ili motiv u jednoj ili više boja, najčešće na akcentnom zidu.",
   };

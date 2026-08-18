@@ -92,7 +92,7 @@ export default async function CenovnikPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: service.title,
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     offers: {
       "@type": "Offer",

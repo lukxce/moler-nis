@@ -75,7 +75,7 @@ export default async function MarmorinoPremazPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Marmorino dekorativni premaz",
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     description: "Italijanska dekorativna tehnika sa efektom glačanog mermera, nanosi se u više tankih slojeva špahtlom i polira do karakterističnog sjaja.",
   };

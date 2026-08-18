@@ -75,7 +75,7 @@ export default async function TravertinoEfekatPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Travertino dekorativni premaz",
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     description: "Dekorativna tehnika koja imitira prirodni travertino kamen, sa karakterističnim porama i slojevitom teksturom, nanosi se špahtlom i alatom za oblikovanje pora u nekoliko slojeva.",
   };

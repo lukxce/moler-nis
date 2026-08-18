@@ -75,7 +75,7 @@ export default async function VenecijanskiPremazPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Venecijanski dekorativni premaz",
-    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HomeAndConstructionBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: settings.city,
     description: "Italijanska dekorativna tehnika sa dubokim, staklastim sjajem, nanosi se u više tankih slojeva špahtlom i dugo polira do karakterističnog efekta.",
   };
