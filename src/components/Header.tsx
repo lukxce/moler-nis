@@ -23,6 +23,7 @@ const serviceLinks = [
 ];
 
 const navLinks = [
+  { href: "/kalkulator-boje", label: "Kalkulator boje" },
   { href: "/cenovnik", label: "Cenovnik" },
   { href: "/blog", label: "Blog" },
   { href: "/kontakt", label: "Kontakt" },
