@@ -40,7 +40,7 @@ function linkPara(before: string, linkText: string, href: string, after: string)
 export const siteSettings = {
   title: "Moler Niš",
   tagline: "Krečenje, fasade i dekorativni premazi u Nišu, uredno i na vreme",
-  phone: "065 781 4923",
+  phone: "062 815 9858",
   email: "info@molernis.rs",
   city: "Niš",
   serviceAreas: ["Niš", "Niška Banja", "Medijana", "Pantelej", "Crveni Krst"],
